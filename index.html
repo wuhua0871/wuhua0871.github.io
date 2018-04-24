@@ -285,6 +285,216 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/wuhua0871/wuhua0871.github.io/2018/04/22/从零打造免费个人网站：一，初识HEXO/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无华0871">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wuhua0871's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/04/22/从零打造免费个人网站：一，初识HEXO/" itemprop="url">
+                  从零打造免费个人网站：一，初识HEXO
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-22T21:56:00+08:00">
+                2018-04-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/22/从零打造免费个人网站：一，初识HEXO/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/04/22/从零打造免费个人网站：一，初识HEXO/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="想不想拥有自己的个人网站"><a href="#想不想拥有自己的个人网站" class="headerlink" title="想不想拥有自己的个人网站"></a>想不想拥有自己的个人网站</h1><p>你想拥有一个只属于你自己的网站么？</p>
+<p>不想？</p>
+<p>是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？</p>
+<p>那么，现在我现在告诉你，有这样一个机会：<strong>只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站</strong>，你来不来呢？</p>
+<p>如果我再告诉你：<strong>如果一切顺利的话，整个过程只需花费五分钟</strong>，你来不来呢？</p>
+<p>好吧，如果你还在继续往下看，那我想你八成是动心了。那我们就废话不多说，马上行动起来吧。</p>
+<p>我们的整体思路是这样的：<strong>利用HEXO这个工具，在github这个网站上，搭建我们自己的个人网站。</strong></p>
+<p>注意刚才这句话里，我们一共提到两个东西：<strong>HEXO</strong>和<strong>github</strong>。在进行下一步操作之前，我觉得最好先详细介绍一下它们俩，毕竟它们是我们接下来所有操作的主角。</p>
+<p>它们一个是工具，一个是网站，这点刚才已经说过了。但它们具体是怎么的工具，怎样的网站呢？别着急，我马上为你一一道来。</p>
+<h1 id="HEXO和github"><a href="#HEXO和github" class="headerlink" title="HEXO和github"></a>HEXO和github</h1><h2 id="1-什么是HEXO？"><a href="#1-什么是HEXO？" class="headerlink" title="1.什么是HEXO？"></a>1.什么是HEXO？</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-安装HEXO"><a href="#2-安装HEXO" class="headerlink" title="2.安装HEXO"></a>2.安装HEXO</h2><p>安装Hexo只需几分钟时间，相当简单。但有个安装前提，在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
+<ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用<code>npm</code>即可完成Hexo的安装。具体的安装过程及必备程序的安装，我们稍后会详细介绍，暂且按下不表。</p>
+<h2 id="3-什么是github"><a href="#3-什么是github" class="headerlink" title="3.什么是github"></a>3.什么是github</h2><p>github到底是一个怎样的网站呢？让我们直接引用来自维基百科的解释：</p>
+<blockquote>
+<p><strong>GitHub</strong> 是通过<strong>Git</strong>进行版本控制的软件源代码托管服务，由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。</p>
+<p><strong>GitHub</strong> 同时提供付费账户和免费账户。这两种账户都可以创建公开的代码仓库，但是付费账户还可以创建私有的代码仓库。根据在2009年的Git用户调查，GitHub是最流行的Git访问站点。除了允许个人和组织创建和访问保管中的代码以外，它也提供了一些方便社会化共同软件开发的功能，即一般人口中的社区功能，包括允许用户追踪其他用户、组织、软件库的动态，对软件代码的改动和bug提出评论等。GitHub也提供了图表功能，用于概观显示开发者们怎样在代码库上工作以及软件的开发活跃程度。</p>
+<p>截止到2015年，GitHub已经有超过两千八百万注册用户和7900万代码库。事实上已经成为了世界上最大的代码存放网站和开源社区。</p>
+</blockquote>
+<p>说了这么多，我们需要知道的无非以下两点：</p>
+<ol>
+<li>github是程序员们用来储存代码的，它通过git进行版本控制；</li>
+<li>免费用户也可以在github上建立代码仓库。</li>
+</ol>
+<p>看吧，可以免费建立代码仓库——<em>对于我们来说是储存网站文件</em>，还可以进行版本控制——<em>对于我们来说是网站的更新</em>，我们需要的功能是不是都有了呢。</p>
+<h2 id="4-软件安装"><a href="#4-软件安装" class="headerlink" title="4.软件安装"></a>4.软件安装</h2><p>通过前面的介绍，背景知识就介绍的差不多了。我们这就进入下一步准备工作：<strong>软件安装。</strong></p>
+<p>由于我自己用的电脑是windows系统，而且读者中大部分人用的也是windows系统，故以下操作就以windows系统为例，其他操作系统的，请自己灵活处理了。</p>
+<p>我们需要安装哪些软件，它们各有什么作用，我用下面的表格作个说明：<br>软件|作用<br>–|–<br>Node.js|HEXO运行必备<br>git  |HEXO必备，上传网页到github，版本控制（当然了，对于我们来说是网站的更新）<br>HEXO  |网页文件的生成<br>atom  |文件编辑器，markdown写作利器  </p>
+<p>除了HEXO，另外三个软件我们直接下载安装包安装就行了。虽然这里面包含了无奈与妥协，但是这个我们就不说了。为了方便大家，我在这里也贴出我分享的百度网盘下载地址：<a href="https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A。" target="_blank" rel="noopener">https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A。</a></p>
+<p>相信我人品的，不怕死的，就把地址复制到浏览器里下载吧。不想在这里下载的朋友，下载地址大家自己搜索下吧，尽量用谷歌搜索，尽量选择官方下载。</p>
+<p>注意，我这里分享的软件只适用于64位windows系统。还在用32位系统的各位，你们可能只能靠自己了，祝好运！</p>
+<p>至于HEXO，等后面直接用命令安装就好了，现在还不到时候。安装好了这两个软件，就让我们进入下一步吧。</p>
+<p>#我的网站我来了！</p>
+<h2 id="1-创建代码仓库"><a href="#1-创建代码仓库" class="headerlink" title="1.创建代码仓库"></a>1.创建代码仓库</h2><p>在github创建代码库之前，我们首先要先登录账号。如果你还没有github账号，打开github.com，注册一个就好了，没什么好说的，记住用户名不要包含中文，取个由英文字母和数字组成的就行。</p>
+<p>我们直接跳到下一步，如何创建代码仓库。</p>
+<p>也许到这里，有的朋友会心生疑问：</p>
+<blockquote>
+<p>喂，老兄！你是不是搞错了？我们是要储存网页，又不上传代码，怎么是建立什么代码仓库呢？</p>
+</blockquote>
+<p>这个问题我觉得提得非常好。我现在马上解答：</p>
+<ol>
+<li>没有搞错。</li>
+<li>是的，我们是要储存网页。</li>
+</ol>
+<p>我们就是要建立一个代码仓库，来储存我们上传的网页。需要特别注意的是，我们要建立一个特殊的代码仓库，它必须以你自己的用户名加一个固定后缀，公式是：yourname+.github.io。以我自己为例，我在github的用户名是：wuhua0871，所以我需要创建的代码仓库名字就是：wuhua0871.github.io。<br><img src="http://ofqnvfc0m.bkt.clouddn.com/01.%E6%96%B0%E5%BB%BA_%E5%89%AF%E6%9C%AC.png" alt=""><br><img src="http://ofqnvfc0m.bkt.clouddn.com/02.%E5%A1%AB%E5%86%99_%E5%89%AF%E6%9C%AC.png" alt=""></p>
+<p>一定要记住，这里能够变动的，只有用户名，其他一个字母都不能变。</p>
+<h2 id="2-安装HEXO，建站"><a href="#2-安装HEXO，建站" class="headerlink" title="2.安装HEXO，建站"></a>2.安装HEXO，建站</h2><p>如果你完成了上一步，那现在我们就万事具备，只欠东风了。</p>
+<p>现在，选择一个文件夹，用来储存你网站的本地文件。比如我选择的是E:\HEXO，那么我就需要在E:\HEXO这个文件夹上点击右键，选择Git Bash Here，然后会弹出如图所示窗口。<br><img src="http://ofqnvfc0m.bkt.clouddn.com/04%E5%8F%B3%E9%94%AE.png" alt=""><br><img src="http://ofqnvfc0m.bkt.clouddn.com/05%20Git.PNG" alt=""></p>
+<p>在刚才弹出的窗口输入下列命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init yourname.github.io</span><br><span class="line">cd yourname.github.io</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo generate</span><br><span class="line">hexo serve</span><br></pre></td></tr></table></figure></p>
+<p>两点说明：</p>
+<ol>
+<li>命令要一条一条输入和执行，一条完了再输另外一条</li>
+<li>注意把其中的yourname换成你在github的用户名。</li>
+</ol>
+<p>直到出在下面信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></p>
+<p>这时你可以在浏览器里面敲入上面的地址<a href="http://localhost:4000/，预览一下网站的样子。" target="_blank" rel="noopener">http://localhost:4000/，预览一下网站的样子。</a></p>
+<p>到现在为止，我们离成功建立自己的网站就只差临门一脚了。切换回git bash窗口，先按下组合键Ctrl+C，然后在命令框中输入下列命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">atom .</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://ofqnvfc0m.bkt.clouddn.com/06%20atom_%E5%89%AF%E6%9C%AC.png" alt=""></p>
+<p>在弹出的atom右侧，选择_config.yml文件，把图片位置修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>同样的，记得替换yourname为你的用户名。完了按组合键Ctrl+S保存修改，然后回到git bash，键入下面命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>在弹出的窗口中，输入你的github账号和密码，回车。</p>
+<p>如果一切正常，窗口在跳过一连串代码后，会出现下面的信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Everything up-to-date</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure></p>
+<p>这就意味着一切正常，你的网站已经部署成功了，网址就是你的代码仓库名字：<a href="https://yourname.github.io" target="_blank" rel="noopener">https://yourname.github.io</a> 。</p>
+<p>你现在可以在浏览器里面查看了。</p>
+<p>开心了吧？还不赶紧把你的网址发给小伙伴们装个逼！</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>现在，我们的网站已经建立起来了。</p>
+<p>你会发现，这只是一个HEXO用来示范的模板，就是我们刚才本地预览的那个死样子，几乎没什么内容，而且样式也千篇一律，丑到了极点。你心里可能会有千万神痹呼啸而过：<strong>尼玛，这货跟我想要的网站之间，差了至少有无数个wuhua0871.com的距离吧</strong>！</p>
+<p>但这不是重点。</p>
+<p>重点是：<strong>我们现在是拥有自己网站的人了，对不对！</strong></p>
+<p>王家卫的电影《东邪西毒》里面，张国荣不是就有这么句台词么：</p>
+<blockquote>
+<p>穿鞋的和不穿鞋的刀客，价钱是相差很远的。</p>
+</blockquote>
+<p>是的，我们现在算是穿戴的刀客了——虽然穿的鞋并不怎么样。有和没有，差距就是这么大，你不觉得么！</p>
+<p>好了，我们的教程到这时就结束了。至于说怎样个性化我们的网站，怎么更新我们网站的内容，这又是另外的问题了，我们后会有期。</p>
+<p>哦，对了，有个事儿偷偷告诉你下，点击文末的阅读原文，可以看看我的网站是什么样子。哈哈……</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://github.com/wuhua0871/wuhua0871.github.io/2017/09/28/你还在每天买彩票吗？/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -832,144 +1042,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/wuhua0871/wuhua0871.github.io/2017/06/15/致未来的自己/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="无华0871">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wuhua0871's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/06/15/致未来的自己/" itemprop="url">
-                  致22天后的自己
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-15T18:47:00+08:00">
-                2017-06-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/15/致未来的自己/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/15/致未来的自己/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="http://ofqnvfc0m.bkt.clouddn.com/%E5%86%99%E4%BF%A1_%E5%89%AF%E6%9C%AC.jpg" alt="写信"><br>未来的我：</p>
-<p>你好，兄弟。</p>
-<p>说实话，现在我处境比较尴尬。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/15/致未来的自己/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1019,7 +1091,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
