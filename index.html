@@ -372,33 +372,16 @@
 
       
         
-          
-            <p><img src="http://ofqnvfc0m.bkt.clouddn.com/%E5%8A%9E%E5%85%AC.jpg" alt=""><br>在前面一篇<a href="http://wuhua0871.com/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/" target="_blank" rel="noopener">从零打造免费个人网站：一，初识HEXO</a>中，我们用最快的速度，搭建了一个免费的个人网站——<em>一个只有简单功能的示范性网站</em>。今天，我们将紧接上一次的结尾，讨论下怎么来修改、定制和美化我们的网站。</p>
+          <p><img src="http://ofqnvfc0m.bkt.clouddn.com/%E5%8A%9E%E5%85%AC.jpg" alt=""><br>在前面一篇<a href="http://wuhua0871.com/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/" target="_blank" rel="noopener">从零打造免费个人网站：一，初识HEXO</a>中，我们用最快的速度，搭建了一个免费的个人网站——<em>一个只有简单功能的示范性网站</em>。今天，我们将紧接上一次的结尾，讨论下怎么来修改、定制和美化我们的网站。</p>
 <p>要解决“<strong>修改、定制和美化我们网站</strong>”这个问题，需要我们对<strong>HEXO</strong>这个东西那更进一步的认识。就让我们就从了解HEXO文件目录开始吧。</p>
-<h3 id="1-hexo的目录结构"><a href="#1-hexo的目录结构" class="headerlink" title="1.hexo的目录结构"></a>1.hexo的目录结构</h3><p><img src="http://ofqnvfc0m.bkt.clouddn.com/01%E7%9B%AE%E5%BD%95.PNG" alt="HEXO目录"></p>
-<p>上图所示，是我网站的目录构成。</p>
-<p>哦，对了，如果你是按照上一篇介绍的方法来的话，你的网站目录为：<strong>你选择的目录/HEXO/yourname.github.io</strong>，其中的yourname为你的github网站上的用户名，还记得么？</p>
-<p>接下来，我来详细说明一下，每个文件和文件夹是干什么的，在我们搭建网站的过程中，有什么具体的作用。</p>
-<ol>
-<li><strong>/.deploy_git:即将将上传到github的网站文件</strong>。它们都是由命令<code>hexo deploy</code>自动生成，并执行上传的。里面具体是什么，一般不用我们操心。在后期上网上传过程中出现问题的时候，可以手动删除此文件夹，再重新生成，看看能不能解决问题。</li>
-<li><strong>/node_modules:Hexo的插件</strong>，安装过程中会自动生成，我们不管。</li>
-<li><strong>/public：最终所见网页的所有内容。里面是我们网站的内容</strong>，它是在我们执行<code>hexo generate</code>命令是生成的，。我们执行<code>hexo server</code>时预览的，也是这个文件夹里面的内容。</li>
-<li><strong>/scaffolds：模板文件</strong>，它决定了我们网站文章的一些基本格式。当新建一个文章时，会默认包含对应模板的内容。</li>
-<li><strong>/source：存放用户资源的地方</strong>。它是我们生成/public内容的基础。所有的源文件都会被保存在_post文件夹中。除 posts 文件夹之外，开头命名为 (下划线)的文件和文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</li>
-<li><strong>/themes：主题文件夹，存放hexo主题文件的。</strong></li>
-<li><strong>.gitignore： 作用是声明不被git记录的文件</strong>，是hexo初始化带来的，可以先删除或者直接编辑，对hexo不会有影响。</li>
-<li><strong>_config.yml：hexo的站点配置文件，非常重要</strong>。对它的任何改动都会对整个网站产生影响，改动不对，还会导致各种报错。对它的修改和设置，后面会有详细介绍。</li>
-<li><strong>db.json：缓存文件。</strong> node_modules 安装的插件以及hexo所需的一些node.js模块。</li>
-<li><strong>package.json：应用程序信息，配置hexo运行需要的js包。</strong> 里面定义的是版本范围（比如^1.0.0），具体跑npm install的时候安的什么版本，要解析后才能决定，这里面定义的依赖关系树，可以称之为逻辑树（logical tree）。</li>
-<li><strong>package-lock.json：可以理解成对结合了逻辑树和物理树的一个快照（snapshot）</strong>，里面有明确的各依赖版本号，实际安装的结构，也有逻辑树的结构。</li>
-</ol>
-<h3 id="2-hexo的工作原理"><a href="#2-hexo的工作原理" class="headerlink" title="2.hexo的工作原理"></a>2.hexo的工作原理</h3><p>通过上面的目录介绍，相信你已经对hexo的工作原理有了个大致的了解。下面我将用一个图，对hexo是如何工作的作一个简短说明，虽然可能不太准确，但是确实实用。</p>
-<p>废话不多说，上图：<br><img src="http://ofqnvfc0m.bkt.clouddn.com/HEXO%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt=""></p>
-<p>通过上图，我们还可以知道，<strong>markdown文件，HEXO的设置文件，HEXO主题及设置就是生成我们网站的所有原材料，其他的东西，都是根据这几个东西生成的</strong>。换句话说，<strong>只要我们妥善保存和备份了这几个文件，我们的整个网站就可以完全恢复</strong>。</p>
-<p>现在知道怎么备份自己的网站了没？说实话，我也是在电脑更换硬盘之后，网站不但没法继续更新，还差点儿连之前的内容都找不回的情况下，一点点摸索，一次次尝试，才弄明白的。折腾完之后，我痛定思痛，决定把这次折腾的心得体会写下来，一来是方便我日后查阅，二来也可以方便后来人，让你们少走弯路。</p>
-<p>好了，今天就说这些吧。下一次，我们将重点探讨HEXO的两个配置文件。</p>
-
-          
+<h3 id="1-hexo的目录结构"><a href="#1-hexo的目录结构" class="headerlink" title="1.hexo的目录结构"></a>1.hexo的目录结构</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/28/从零打造免费个人网站：二，深入了解HEXO/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
