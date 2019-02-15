@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -106,7 +106,7 @@
 <meta property="og:url" content="http://wuhua0871.com/about/index.html">
 <meta property="og:site_name" content="Wuhua0871&#39;s Webland">
 <meta property="og:description" content="关于我你好，我是无华0871。 我的信条是：生命不息，折腾不止！  种一棵树的最佳时机，是二十年前，次佳时机是现在！  这句话，送给你，也送给我自己。 网络上的我简书：张发荣微博：无华0871知乎：无华0871github：wuhua0871 联系我微信：">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-b18ed9b88e453e36.png">
 <meta property="og:updated_time" content="2018-12-21T14:51:53.986Z">
 <meta name="twitter:card" content="summary">
@@ -170,7 +170,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -201,7 +201,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -231,7 +231,7 @@
       
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>首页</a>
 
   </li>
         
@@ -250,7 +250,7 @@
       
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br/>Über</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br/>关于</a>
 
   </li>
         
@@ -269,7 +269,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archiv<span class="badge">14</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档<span class="badge">14</span></a>
 
   </li>
 
@@ -405,10 +405,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            站点概览
           </li>
         </ul>
       
@@ -433,7 +433,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">14</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
@@ -448,7 +448,7 @@
                       
                     
                     <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    <span class="site-state-item-name">分类</span>
                   
                 </div>
               
@@ -589,7 +589,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-user"></i>
     </span>
-    <span class="site-uv" title="Total Visitors">
+    <span class="site-uv" title="总访客量">
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
     </span>
   
@@ -602,7 +602,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-eye"></i>
     </span>
-    <span class="site-pv" title="Total Views">
+    <span class="site-pv" title="总访问量">
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
     </span>
   
@@ -834,7 +834,7 @@
     $('.highlight').each(function(i, e) {
       var $wrap = $('<div>').addClass('highlight-wrap');
       $(e).after($wrap);
-      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function(e) {
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
         var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
           return $(e).text();
         }).toArray().join('\n');
@@ -856,15 +856,15 @@
         ta.setSelectionRange(0, code.length);
         var result = document.execCommand('copy');
         
-          if (result) $(this).text('Copied');
-          else $(this).text('Copy failed');
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
         
         ta.blur(); //For iOS
         $(this).blur();
       })).on('mouseleave', function(e) {
         var $b = $(this).find('.copy-btn');
         setTimeout(function() {
-          $b.text('Copy');
+          $b.text('复制');
         }, 300);
       }).append(e);
     })
