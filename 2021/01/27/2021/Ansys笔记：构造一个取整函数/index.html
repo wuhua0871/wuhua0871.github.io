@@ -100,17 +100,17 @@
 
 
 
-  <meta name="description" content="取整函数比较常用，但是Ansys里面是没有内置的，所以我们今天来自己构造一个。 Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数NINT(x)，它的作用是取最接近x的最大整数。我们将在它的基础上，再通过二次操作，达到取整的目的。 好，废话不多说，我们马上开始。 方法1：四舍五入的“五”a=nint(x)-0.5 既然NINT是四舍五入，我们在原数的基础上，减掉0.5，再四舍五入，刚">
+  <meta name="description" content="取整函数比较常用，但是Ansys里面是没有内置的，所以我们今天来自己构造一个。 Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数$NINT(x)$，它的作用是取最接近x的最大整数。我们将在它的基础上，再通过二次操作，达到取整的目的。 好，废话不多说，我们马上开始。 方法1：四舍五入的“五”$$a=nint(x)-0.5$$ 既然$NINT$是四舍五入，我们在原数的基础上，减掉$0.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ansys笔记：构造一个取整函数">
 <meta property="og:url" content="http://wuhua0871.com/2021/01/27/2021/Ansys笔记：构造一个取整函数/index.html">
 <meta property="og:site_name" content="Wuhua0871&#39;s Webland">
-<meta property="og:description" content="取整函数比较常用，但是Ansys里面是没有内置的，所以我们今天来自己构造一个。 Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数NINT(x)，它的作用是取最接近x的最大整数。我们将在它的基础上，再通过二次操作，达到取整的目的。 好，废话不多说，我们马上开始。 方法1：四舍五入的“五”a=nint(x)-0.5 既然NINT是四舍五入，我们在原数的基础上，减掉0.5，再四舍五入，刚">
+<meta property="og:description" content="取整函数比较常用，但是Ansys里面是没有内置的，所以我们今天来自己构造一个。 Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数$NINT(x)$，它的作用是取最接近x的最大整数。我们将在它的基础上，再通过二次操作，达到取整的目的。 好，废话不多说，我们马上开始。 方法1：四舍五入的“五”$$a=nint(x)-0.5$$ 既然$NINT$是四舍五入，我们在原数的基础上，减掉$0.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-01-27T15:39:51.632Z">
+<meta property="og:updated_time" content="2021-01-27T15:49:47.103Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ansys笔记：构造一个取整函数">
-<meta name="twitter:description" content="取整函数比较常用，但是Ansys里面是没有内置的，所以我们今天来自己构造一个。 Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数NINT(x)，它的作用是取最接近x的最大整数。我们将在它的基础上，再通过二次操作，达到取整的目的。 好，废话不多说，我们马上开始。 方法1：四舍五入的“五”a=nint(x)-0.5 既然NINT是四舍五入，我们在原数的基础上，减掉0.5，再四舍五入，刚">
+<meta name="twitter:description" content="取整函数比较常用，但是Ansys里面是没有内置的，所以我们今天来自己构造一个。 Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数$NINT(x)$，它的作用是取最接近x的最大整数。我们将在它的基础上，再通过二次操作，达到取整的目的。 好，废话不多说，我们马上开始。 方法1：四舍五入的“五”$$a=nint(x)-0.5$$ 既然$NINT$是四舍五入，我们在原数的基础上，减掉$0.">
 
 
 
@@ -400,7 +400,7 @@
                 
               
 
-              <time title="创建时间：2021-01-27 22:58:00 / 修改时间：23:39:51" itemprop="dateCreated datePublished" datetime="2021-01-27T22:58:00+08:00">2021-01-27</time>
+              <time title="创建时间：2021-01-27 22:58:00 / 修改时间：23:49:47" itemprop="dateCreated datePublished" datetime="2021-01-27T22:58:00+08:00">2021-01-27</time>
             
 
             
@@ -479,11 +479,11 @@
 
       
         <p><strong>取整函数</strong>比较常用，但是Ansys里面是没有内置的，所以我们今天来自己构造一个。</p>
-<p>Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数<strong>NINT(x)</strong>，它的作用是<strong>取最接近x的最大整数</strong>。我们将在它的基础上，再通过二次操作，达到取整的目的。</p>
+<p>Ansys内置函数里面，与取整函数最接近的，是一个四舍五入的函数<strong>$NINT(x)$</strong>，它的作用是<strong>取最接近x的最大整数</strong>。我们将在它的基础上，再通过二次操作，达到取整的目的。</p>
 <p>好，废话不多说，我们马上开始。</p>
-<h2 id="方法1：四舍五入的“五”"><a href="#方法1：四舍五入的“五”" class="headerlink" title="方法1：四舍五入的“五”"></a>方法1：四舍五入的“五”</h2><p>a=nint(x)-0.5</p>
-<p>既然NINT是四舍五入，我们在原数的基础上，减掉0.5，再四舍五入，刚好可以达到取整的目的。</p>
-<h2 id="方法2：小数部分"><a href="#方法2：小数部分" class="headerlink" title="方法2：小数部分"></a>方法2：小数部分</h2><p>a=nint(x-mod(x,1))</p>
+<h2 id="方法1：四舍五入的“五”"><a href="#方法1：四舍五入的“五”" class="headerlink" title="方法1：四舍五入的“五”"></a>方法1：四舍五入的“五”</h2><p>$$a=nint(x)-0.5$$</p>
+<p>既然$NINT$是四舍五入，我们在原数的基础上，减掉$0.5$，再四舍五入，刚好可以达到取整的目的。</p>
+<h2 id="方法2：小数部分"><a href="#方法2：小数部分" class="headerlink" title="方法2：小数部分"></a>方法2：小数部分</h2><p>$$a=nint(x-mod(x,1))$$</p>
 <p>这个方法分两步：</p>
 <ol>
 <li>取出原数的小数部分（对1取模）</li>
