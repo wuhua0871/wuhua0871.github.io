@@ -75,7 +75,7 @@
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '',
+    root: '/',
     scheme: 'Gemini',
     version: '7.0.0',
     sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -168,7 +168,7 @@
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -494,17 +494,17 @@
       
         <h1 id="1-线的方向"><a href="#1-线的方向" class="headerlink" title="1.线的方向"></a>1.线的方向</h1><p>Ansys里面线的方向跟解析几何里面是一样的，它是一个由起点指向终点的向量决定的。由上次分享的方法得到线的起点为点 $kp1(x_1,y_1,z_1)$ ,终点为$kp2(x_2,y_2,z_2)$ ,那么线的方向向量即为$\vec{a}&#x3D;(x_2-x_1)\vec{i}+(y_2-y_1)\vec{j}+(z_2-z_1)\vec{k}$。</p>
 <p>但是这样表示会造成很多平行且同向的线，方向向量并不一定相等。所以我们还需要把它单位化，即$\vec{E}&#x3D;\dfrac{\vec{a}}{\left|\vec{a}\right|}$，其中$\left|\vec{a}\right|&#x3D;\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$。</p>
-<span id="more"></span>
+<a id="more"></a>
 <p>既然$\vec{E}$是单位向量，那么我们可知$\left|\vec{E}\right|&#x3D;1$。（其实我们由定义也可以得到这一结论。）</p>
 <p>这里说到的，后面我们都将用到。毫不夸张地说，如果掌握了线的方向向量的使用方法，在选择线的时候你将如虎添翼。</p>
 <h1 id="2-应用"><a href="#2-应用" class="headerlink" title="2.应用"></a>2.应用</h1><p>我们的应用将围绕Ansys帮助里面的这么一句话展开：<br><img src="/images/%E7%BA%BF%E7%9A%84%E6%96%B9%E5%90%91%E5%90%91%E9%87%8F.PNG"></p>
 <p>这里的$tan1$和$tan2$有这样的关系$tan1&#x3D;-tan2$。这里的$tan2$跟我们的方向向量方向是一致的，$tan1$则相反。注意细节： <strong>它们都是单位向量</strong>。所以，三个分量上的值总是在±1之间，结合相关的几何知识，这可以发挥很多妙用。</p>
 <p>选择x轴同向的线：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsel,s,tan2,x,1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsel,s,tan2,x,1</span><br></pre></td></tr></table></figure>
 <p>从当前选择集里面，选择正向朝向y轴负向的线：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsel,r,tan2,y,-1,1e-12</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsel,r,tan2,y,-1,1e-12</span><br></pre></td></tr></table></figure>
 <p>选择跟z轴垂直的线：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsel,s,tan2,z,0</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsel,s,tan2,z,0</span><br></pre></td></tr></table></figure>
 <p>因为都是很简单的命令，就不上图了。理解下自己去用就可以了。只是有一点需要提醒：<strong>tan2里面的三个分量是在全局直角坐标系下的分量，跟当前激活的坐标系无关</strong>。</p>
 <p>我之前分享过一往篇<a href="https://wuhua0871.com/2019/08/18/2019/Ansys%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E9%80%89%E6%8B%A9%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/">《选择比努力更重要》</a>，里面特别强调了选择的重要性，并列举了一些选择命令的使用方法。但是还不够全面，今天这篇算是一个关于直线选择的补充。</p>
 
@@ -765,7 +765,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E7%BA%BF%E7%9A%84%E6%96%B9%E5%90%91"><span class="nav-number">1.</span> <span class="nav-text">1.线的方向</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">2.应用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-线的方向"><span class="nav-number">1.</span> <span class="nav-text">1.线的方向</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-应用"><span class="nav-number">2.</span> <span class="nav-text">2.应用</span></a></li></ol></div>
             
 
           </div>

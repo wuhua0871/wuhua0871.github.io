@@ -75,7 +75,7 @@
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '',
+    root: '/',
     scheme: 'Gemini',
     version: '7.0.0',
     sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -176,7 +176,7 @@
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -503,7 +503,7 @@
         <p>今天分享一个自制的批量修改线方向的小插件。它的功能很简单，但贵在方便简单，使用起来非常方便。</p>
 <p>它的功能就是：<em><strong>批量</strong>调整<strong>线的方向</strong>，让<strong>选定的线</strong>指向你所<strong>选定的坐标轴的正向</strong>（<strong>当前</strong>激活的<strong>坐标系</strong>内）。</em></p>
 <p>这样说有点儿抽象，下面我们用图例说明。<br><img src="/images/%E4%B9%B1%E5%BA%8F-0.PNG" alt="乱序1"></p>
-<span id="more"></span>
+<a id="more"></a>
 <p><img src="/images/%E6%8E%92%E5%BA%8F-0.PNG" alt="排序1"><br><img src="/images/%E4%B9%B1%E5%BA%8F-1.PNG" alt="乱序1"><br><img src="/images/%E6%8E%92%E5%BA%8F-1.PNG" alt="排序1"><br><img src="/images/%E6%8E%92%E5%BA%8F-2.PNG" alt="排序2"><br><img src="/images/%E4%B9%B1%E5%BA%8F-2.PNG" alt="乱序2"><br><img src="/images/%E6%8E%92%E5%BA%8F-3.PNG" alt="排序3"></p>
 <p>该插件只有一个参数，即指定坐标轴。它的有效值为1，2，3，分别表示X，Y，Z轴。把该插件放入当前工作目录下，或者安装目录下的<code>/apdl</code>里面，然后像使用普通命令那样键入<code>frontit,1</code>即可_(这里的1也可以是2或者3)_。</p>
 <p>对了，为了使用更方便，我还给此插件添加了报错功能。选择集中没有线时，会提示<br><img src="/images/no-line.PNG" alt="无线"></p>

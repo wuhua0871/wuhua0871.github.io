@@ -75,7 +75,7 @@
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '',
+    root: '/',
     scheme: 'Gemini',
     version: '7.0.0',
     sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -174,7 +174,7 @@
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -499,9 +499,9 @@
 
       
         <p>Ansys里面，线是两个端点是有起点和终点之分的。内置函数Get提供了获取的方法。具体如下图所示：<br><img src="/images/%E7%BA%BF%E7%9A%84%E8%B5%B7%E7%82%B9%E3%80%81%E7%BB%88%E7%82%B9.PNG"></p>
-<span id="more"></span>
+<a id="more"></a>
 <p>我们可能通过下面这段命令流，了解该函数的使用方法，同时更清楚地理解起点和终点的关系。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">fini</span><br><span class="line">/clear</span><br><span class="line">/prep7</span><br><span class="line">blc4,,,200,250,300</span><br><span class="line">vdele,ALL</span><br><span class="line">/PSYMB,ldir,1</span><br><span class="line">/PNUM,LINE,1</span><br><span class="line">/PNUM,kp,1</span><br><span class="line">ALLS</span><br><span class="line">LPLOT</span><br><span class="line"></span><br><span class="line">*GET,n_l,LINE,,COUNT</span><br><span class="line">*DIM,kp_line,ARRAY,n_l,3</span><br><span class="line">*DO,i,1,n_l</span><br><span class="line">kp_line(i,1)=i</span><br><span class="line">*GET,kp_line(i,2),LINE,i,kp,1</span><br><span class="line">*GET,kp_line(i,3),LINE,i,kp,2</span><br><span class="line">*ENDDO</span><br><span class="line"></span><br><span class="line">lreverse,ALL</span><br><span class="line"></span><br><span class="line">*DIM,kp_line1,ARRAY,n_l,3</span><br><span class="line">*DO,i,1,n_l</span><br><span class="line">kp_line1(i,1)=i</span><br><span class="line">*GET,kp_line1(i,2),LINE,i,kp,1</span><br><span class="line">*GET,kp_line1(i,3),LINE,i,kp,2</span><br><span class="line">*ENDDO</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">fini</span><br><span class="line">&#x2F;clear</span><br><span class="line">&#x2F;prep7</span><br><span class="line">blc4,,,200,250,300</span><br><span class="line">vdele,ALL</span><br><span class="line">&#x2F;PSYMB,ldir,1</span><br><span class="line">&#x2F;PNUM,LINE,1</span><br><span class="line">&#x2F;PNUM,kp,1</span><br><span class="line">ALLS</span><br><span class="line">LPLOT</span><br><span class="line"></span><br><span class="line">*GET,n_l,LINE,,COUNT</span><br><span class="line">*DIM,kp_line,ARRAY,n_l,3</span><br><span class="line">*DO,i,1,n_l</span><br><span class="line">kp_line(i,1)&#x3D;i</span><br><span class="line">*GET,kp_line(i,2),LINE,i,kp,1</span><br><span class="line">*GET,kp_line(i,3),LINE,i,kp,2</span><br><span class="line">*ENDDO</span><br><span class="line"></span><br><span class="line">lreverse,ALL</span><br><span class="line"></span><br><span class="line">*DIM,kp_line1,ARRAY,n_l,3</span><br><span class="line">*DO,i,1,n_l</span><br><span class="line">kp_line1(i,1)&#x3D;i</span><br><span class="line">*GET,kp_line1(i,2),LINE,i,kp,1</span><br><span class="line">*GET,kp_line1(i,3),LINE,i,kp,2</span><br><span class="line">*ENDDO</span><br></pre></td></tr></table></figure>
 <p>反转前：<br><img src="/images/%E7%BA%BF%E7%9A%84%E8%B5%B7%E7%82%B9%E3%80%81%E7%BB%88%E7%82%B9-%E5%8F%8D%E8%BD%AC%E5%89%8D.PNG"><br><img src="/images/%E7%BA%BF%E7%9A%84%E8%B5%B7%E7%82%B9%E3%80%81%E7%BB%88%E7%82%B9-%E5%8F%8D%E8%BD%AC%E5%89%8D1.PNG"><br><img src="/images/%E7%BA%BF%E7%9A%84%E8%B5%B7%E7%82%B9%E3%80%81%E7%BB%88%E7%82%B9-%E5%8F%8D%E8%BD%AC%E5%89%8D2.PNG"><br>数组的三列分别为：<strong>线号</strong>，<strong>起点号</strong>和<strong>终点号</strong></p>
 <p>反转方向后：<br><img src="/images/%E7%BA%BF%E7%9A%84%E8%B5%B7%E7%82%B9%E3%80%81%E7%BB%88%E7%82%B9-%E5%8F%8D%E8%BD%AC%E5%90%8E.PNG"><br><img src="/images/%E7%BA%BF%E7%9A%84%E8%B5%B7%E7%82%B9%E3%80%81%E7%BB%88%E7%82%B9-%E5%8F%8D%E8%BD%AC%E5%90%8E1.PNG"><br><img src="/images/%E7%BA%BF%E7%9A%84%E8%B5%B7%E7%82%B9%E3%80%81%E7%BB%88%E7%82%B9-%E5%8F%8D%E8%BD%AC%E5%90%8E2.PNG"></p>
 <p>对比可知，反转方向后，所有线的起点和终点均发生了对调。</p>

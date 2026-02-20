@@ -75,7 +75,7 @@
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '',
+    root: '/',
     scheme: 'Gemini',
     version: '7.0.0',
     sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -166,7 +166,7 @@
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -491,7 +491,7 @@
 
       
         <p>手上的日版kindle paperwhite2升级系统后，之前的中文菜单补丁失效了。虽然就那么几个单词，但是作为强迫的我，表示接受不了。于是，搞之！</p>
-<span id="more"></span>
+<a id="more"></a>
 
 <p>仔细查看了下载的补丁，对比了系统文件，发现：</p>
 <ol>
@@ -499,7 +499,7 @@
 <li>从原理上讲，修正的方法应该起效</li>
 </ol>
 <p>再三观察，反复比对，终于发现问题出在了替换文件的权限上：系统文件为755，替换文件却是744。于是，给原先的脚本增加了个修改仅限的函数：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">chmod_755()</span><br><span class="line">&#123;</span><br><span class="line">	chmod 755 $&#123;LANG_PATH&#125;/zh.conf</span><br><span class="line">	chmod 755 $&#123;LANG_PATH&#125;/zh.properties</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">chmod_755()</span><br><span class="line">&#123;</span><br><span class="line">	chmod 755 $&#123;LANG_PATH&#125;&#x2F;zh.conf</span><br><span class="line">	chmod 755 $&#123;LANG_PATH&#125;&#x2F;zh.properties</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>并把它添加到重启前面执行。</p>
 <p>测试之后，心心念念的中文菜单果然回来了。</p>
 <p>然后又仔细看了系统文件结构，又有两个新发现：</p>

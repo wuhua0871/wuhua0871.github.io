@@ -75,7 +75,7 @@
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '',
+    root: '/',
     scheme: 'Gemini',
     version: '7.0.0',
     sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -100,12 +100,12 @@
 
 
 
-  <meta name="description" content="想不想拥有自己的个人网站你想拥有一个只属于你自己的网站么？ 不想？ 是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？ 那么，现在我现在告诉你，有这样一个机会：只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站，你来不来呢？ 如果我再告诉你：如果一切顺利的话，整个过程只需花费五分钟，你来不来呢？  好吧，如果你还在继续往下看，那我想你八成是动心">
+  <meta name="description" content="想不想拥有自己的个人网站你想拥有一个只属于你自己的网站么？ 不想？ 是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？ 那么，现在我现在告诉你，有这样一个机会：只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站，你来不来呢？ 如果我再告诉你：如果一切顺利的话，整个过程只需花费五分钟，你来不来呢？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从零打造免费个人网站：一，初识HEXO">
 <meta property="og:url" content="http://wuhua0871.com/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/index.html">
 <meta property="og:site_name" content="Wuhua0871&#39;s Webland">
-<meta property="og:description" content="想不想拥有自己的个人网站你想拥有一个只属于你自己的网站么？ 不想？ 是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？ 那么，现在我现在告诉你，有这样一个机会：只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站，你来不来呢？ 如果我再告诉你：如果一切顺利的话，整个过程只需花费五分钟，你来不来呢？  好吧，如果你还在继续往下看，那我想你八成是动心">
+<meta property="og:description" content="想不想拥有自己的个人网站你想拥有一个只属于你自己的网站么？ 不想？ 是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？ 那么，现在我现在告诉你，有这样一个机会：只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站，你来不来呢？ 如果我再告诉你：如果一切顺利的话，整个过程只需花费五分钟，你来不来呢？">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-911ccf00be76165c.jpg">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-a1bbdf4fcc325a5c.png">
@@ -173,7 +173,7 @@
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -503,7 +503,7 @@
 <p>是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？</p>
 <p>那么，现在我现在告诉你，有这样一个机会：<strong>只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站</strong>，你来不来呢？</p>
 <p>如果我再告诉你：<strong>如果一切顺利的话，整个过程只需花费五分钟</strong>，你来不来呢？</p>
-<!---more--->
+<a id="more"></a>
 <p>好吧，如果你还在继续往下看，那我想你八成是动心了。那我们就废话不多说，马上行动起来吧。</p>
 <p>我们的整体思路是这样的：<strong>利用HEXO这个工具，在github这个网站上，搭建我们自己的个人网站。</strong></p>
 <p>注意刚才这句话里，我们一共提到两个东西：<strong>HEXO</strong>和<strong>github</strong>。在进行下一步操作之前，我觉得最好先详细介绍一下它们俩，毕竟它们是我们接下来所有操作的主角。</p>
@@ -554,7 +554,7 @@
 <td>文件编辑器，markdown写作利器</td>
 </tr>
 </tbody></table>
-<p>除了HEXO，另外三个软件我们直接下载安装包安装就行了。虽然这里面包含了无奈与妥协，但是这个我们就不说了。为了方便大家，我在这里也贴出我分享的百度网盘下载地址：<a href="https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A%E3%80%82">https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A。</a></p>
+<p>除了HEXO，另外三个软件我们直接下载安装包安装就行了。虽然这里面包含了无奈与妥协，但是这个我们就不说了。为了方便大家，我在这里也贴出我分享的百度网盘下载地址：<a href="https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A%E3%80%82" target="_blank" rel="noopener">https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A。</a></p>
 <p>相信我人品的，不怕死的，就把地址复制到浏览器里下载吧。不想在这里下载的朋友，下载地址大家自己搜索下吧，尽量用谷歌搜索，尽量选择官方下载。</p>
 <p>注意，我这里分享的软件只适用于64位windows系统。还在用32位系统的各位，你们可能只能靠自己了，祝好运！</p>
 <p>至于HEXO，等后面直接用命令安装就好了，现在还不到时候。安装好了这两个软件，就让我们进入下一步吧。</p>
@@ -575,26 +575,26 @@
 <h2 id="2-安装HEXO，建站"><a href="#2-安装HEXO，建站" class="headerlink" title="2.安装HEXO，建站"></a>2.安装HEXO，建站</h2><p>如果你完成了上一步，那现在我们就万事具备，只欠东风了。</p>
 <p>现在，选择一个文件夹，用来储存你网站的本地文件。比如我选择的是E:\HEXO，那么我就需要在E:\HEXO这个文件夹上点击右键，选择Git Bash Here，然后会弹出如图所示窗口。<br><img src="https://upload-images.jianshu.io/upload_images/5010584-3858241cefa31e7d.png"><br><img src="https://upload-images.jianshu.io/upload_images/5010584-6a31185849e8d10b.PNG"></p>
 <p>在刚才弹出的窗口输入下列命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init yourname.github.io</span><br><span class="line">cd yourname.github.io</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo generate</span><br><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init yourname.github.io</span><br><span class="line">cd yourname.github.io</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo generate</span><br><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
 <p>两点说明：</p>
 <ol>
 <li>命令要一条一条输入和执行，一条完了再输另外一条</li>
 <li>注意把其中的yourname换成你在github的用户名。</li>
 </ol>
 <p>直到出在下面信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<p>这时你可以在浏览器里面敲入上面的地址<a href="http://localhost:4000/%EF%BC%8C%E9%A2%84%E8%A7%88%E4%B8%80%E4%B8%8B%E7%BD%91%E7%AB%99%E7%9A%84%E6%A0%B7%E5%AD%90%E3%80%82">http://localhost:4000/，预览一下网站的样子。</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000&#x2F;. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>这时你可以在浏览器里面敲入上面的地址<a href="http://localhost:4000/%EF%BC%8C%E9%A2%84%E8%A7%88%E4%B8%80%E4%B8%8B%E7%BD%91%E7%AB%99%E7%9A%84%E6%A0%B7%E5%AD%90%E3%80%82" target="_blank" rel="noopener">http://localhost:4000/，预览一下网站的样子。</a></p>
 <p>到现在为止，我们离成功建立自己的网站就只差临门一脚了。切换回git bash窗口，先按下组合键Ctrl+C，然后在命令框中输入下列命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">atom .</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">atom .</span><br></pre></td></tr></table></figure>
 <p><img src="https://upload-images.jianshu.io/upload_images/5010584-a281e63bd6dd784b.png"></p>
 <p>在弹出的atom右侧，选择_config.yml文件，把图片位置修改如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;yourname&#x2F;yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>同样的，记得替换yourname为你的用户名。完了按组合键Ctrl+S保存修改，然后回到git bash，键入下面命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 <p>在弹出的窗口中，输入你的github账号和密码，回车。</p>
 <p>如果一切正常，窗口在跳过一连串代码后，会出现下面的信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Everything up-to-date</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
-<p>这就意味着一切正常，你的网站已经部署成功了，网址就是你的代码仓库名字：<a href="https://yourname.github.io/">https://yourname.github.io</a> 。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Everything up-to-date</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
+<p>这就意味着一切正常，你的网站已经部署成功了，网址就是你的代码仓库名字：<a href="https://yourname.github.io/" target="_blank" rel="noopener">https://yourname.github.io</a> 。</p>
 <p>你现在可以在浏览器里面查看了。</p>
 <p>开心了吧？还不赶紧把你的网址发给小伙伴们装个逼！</p>
 <h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>现在，我们的网站已经建立起来了。</p>
@@ -865,7 +865,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%83%B3%E4%B8%8D%E6%83%B3%E6%8B%A5%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99"><span class="nav-number">1.</span> <span class="nav-text">想不想拥有自己的个人网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO%E5%92%8Cgithub"><span class="nav-number">2.</span> <span class="nav-text">HEXO和github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFHEXO%EF%BC%9F"><span class="nav-number">2.1.</span> <span class="nav-text">1.什么是HEXO？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%89%E8%A3%85HEXO"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装HEXO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%BB%80%E4%B9%88%E6%98%AFgithub"><span class="nav-number">2.3.</span> <span class="nav-text">3.什么是github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">2.4.</span> <span class="nav-text">4.软件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93"><span class="nav-number">2.5.</span> <span class="nav-text">1.创建代码仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%89%E8%A3%85HEXO%EF%BC%8C%E5%BB%BA%E7%AB%99"><span class="nav-number">2.6.</span> <span class="nav-text">2.安装HEXO，建站</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E5%B0%BE"><span class="nav-number">3.</span> <span class="nav-text">结尾</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#想不想拥有自己的个人网站"><span class="nav-number">1.</span> <span class="nav-text">想不想拥有自己的个人网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO和github"><span class="nav-number">2.</span> <span class="nav-text">HEXO和github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是HEXO？"><span class="nav-number">2.1.</span> <span class="nav-text">1.什么是HEXO？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装HEXO"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装HEXO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-什么是github"><span class="nav-number">2.3.</span> <span class="nav-text">3.什么是github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-软件安装"><span class="nav-number">2.4.</span> <span class="nav-text">4.软件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-创建代码仓库"><span class="nav-number">2.5.</span> <span class="nav-text">1.创建代码仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装HEXO，建站"><span class="nav-number">2.6.</span> <span class="nav-text">2.安装HEXO，建站</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结尾"><span class="nav-number">3.</span> <span class="nav-text">结尾</span></a></li></ol></div>
             
 
           </div>

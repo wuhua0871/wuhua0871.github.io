@@ -75,7 +75,7 @@
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '',
+    root: '/',
     scheme: 'Gemini',
     version: '7.0.0',
     sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -174,7 +174,7 @@
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -502,7 +502,7 @@
 <h1 id="一-为什么要搭建自己的Anki服务器？"><a href="#一-为什么要搭建自己的Anki服务器？" class="headerlink" title="一. 为什么要搭建自己的Anki服务器？"></a>一. 为什么要搭建自己的Anki服务器？</h1><h2 id="1-Anki是什么？"><a href="#1-Anki是什么？" class="headerlink" title="1. Anki是什么？"></a>1. Anki是什么？</h2><blockquote>
 <p>Anki是一个基于间隔重复（Spaced Repetition）的字卡软件，同样基于该原理的软件还有商业软件SuperMemo和免费软件Mnemosyne。其名称源自日语的“暗記”（日语发音为：Anki，意思即为“记忆”）。<br>Anki对SuperMemo的SM2算法予以改进，使其可以根据记忆卡的优先级、紧急程度进行优化调整。<br>记忆卡采用HTML语言编写，支持插入图片、音频以及LaTeX公式。<br>Anki支持多平台客户端，包括PC、安卓、iOS、塞班等，也可以直接登录Ankiweb进行学习。除此之外，注册一个免费账户，便可实现平台之间的同步。<br>——维基百科，自由的百科全书</p>
 </blockquote>
-<span id="more"></span>
+<a id="more"></a>
 <p>简单说就是，Anki是一个利用更好的算法，通过间隔重复的方式，帮助我们记忆东西的软件。它多平台支持，开源，同步方便。</p>
 <p>此外，因为Anki的记忆卡采用HTML编写，扩展方便。多年的发展让它积累了大量成熟、优秀、好用的卡片组，比如各种英语考试的，其他语种学习的，初高中各学科的，各种国家等级证书考试的，应有尽有，均可在网上方便地免费获得。</p>
 <p>如果你觉得现有的卡片不能满足你的要求，你还可以制作自己的记忆卡片组。因此，只要是需要记忆的内容，都可以制作成记忆卡片组，通过Anki来完成。这大大扩大了Anki的应用范围，使它成为了我们记忆学习的一个大杀器。</p>
@@ -557,121 +557,121 @@
 <h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h2><ol>
 <li>安装Akni服务：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">easy_install AnkiServer</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">easy_install AnkiServer</span><br></pre></td></tr></table></figure>
 
 <ol start="2">
 <li>添加名为anki的用户：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd -d /home/anki -m anki</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -d &#x2F;home&#x2F;anki -m anki</span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li>切换到anki用户：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su -l anki</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su -l anki</span><br></pre></td></tr></table></figure>
 
 <ol start="4">
 <li>新建anki文件夹并进入：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir anki</span><br><span class="line">cd anki</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir anki</span><br><span class="line">cd anki</span><br></pre></td></tr></table></figure>
 
 <ol start="5">
 <li>创建配置文件：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/local/lib/python2.7/dist-packages/AnkiServer-2.0.6-py2.7.egg/examples/example.ini production.ini</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp &#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.7&#x2F;dist-packages&#x2F;AnkiServer-2.0.6-py2.7.egg&#x2F;examples&#x2F;example.ini production.ini</span><br></pre></td></tr></table></figure>
 
 <ol start="6">
 <li>修改配置文件：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano production.ini</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano production.ini</span><br></pre></td></tr></table></figure>
 
 <ol start="7">
 <li>修改其中的服务器地址为实际地址：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">host = x.x.x.x</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">host &#x3D; x.x.x.x</span><br></pre></td></tr></table></figure>
 
 <p>保存，然后退出。</p>
 <ol start="8">
 <li>添加anki账号：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py adduser username</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py adduser username</span><br></pre></td></tr></table></figure>
 
 <p>回车后根据提示输入账号密码。</p>
 <h2 id="3-测试"><a href="#3-测试" class="headerlink" title="3.测试"></a>3.测试</h2><ol>
 <li>调试模式运行Ankiserver</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py debug</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py debug</span><br></pre></td></tr></table></figure>
 
 <p>收到报错：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Anki requires a UTF-8 locale</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Anki requires a UTF-8 locale</span><br></pre></td></tr></table></figure>
 
 <ol start="2">
 <li>执行以下命令：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 -c &quot;import sys; print sys.getfilesystemencoding()&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 -c &quot;import sys; print sys.getfilesystemencoding()&quot;</span><br></pre></td></tr></table></figure>
 
 <p>结果如下:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ANSI_X3.4-1968</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ANSI_X3.4-1968</span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li>语言设置问题，执行以下命令：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export LC_ALL=&quot;en_US.UTF-8&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export LC_ALL&#x3D;&quot;en_US.UTF-8&quot;</span><br></pre></td></tr></table></figure>
 
 <p>再次debug调试，报错仍旧，应该是语言包缺失。</p>
 <ol start="4">
 <li>安装语言包：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg-reconfigure locales</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg-reconfigure locales</span><br></pre></td></tr></table></figure>
 
 <p>选择<code>en-US.UTF-8</code>安装，然后修改<code>/etc/default/locale</code>为</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANG=&quot;en_US.UTF-8&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANG&#x3D;&quot;en_US.UTF-8&quot;</span><br></pre></td></tr></table></figure>
 
 <ol start="5">
 <li>重启：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
 
 <ol start="6">
 <li>查看语言环境：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 -c &quot;import sys; print sys.getfilesystemencoding()&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 -c &quot;import sys; print sys.getfilesystemencoding()&quot;</span><br></pre></td></tr></table></figure>
 
 <p>结果为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UTF-8</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UTF-8</span><br></pre></td></tr></table></figure>
 
 <p>语言环境已正常，继续debug试运行</p>
 <ol start="7">
 <li>以anki用户进入<code>/home/anki/anki</code>，再次调试：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py debug ./anki/production.ini</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py debug .&#x2F;anki&#x2F;production.ini</span><br></pre></td></tr></table></figure>
 
 <p>无报错，Ctrl+C退出，运行ankiserver:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py start</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ankiserverctl.py start</span><br></pre></td></tr></table></figure>
 
 <p>手机测试同步正常。</p>
 <h2 id="4-添加开机启动"><a href="#4-添加开机启动" class="headerlink" title="4.添加开机启动"></a>4.添加开机启动</h2><ol>
 <li>以anki账号在anki家目录下操作：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch anki-start.sh</span><br><span class="line">nano anki-start.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch anki-start.sh</span><br><span class="line">nano anki-start.sh</span><br></pre></td></tr></table></figure>
 
 <ol start="2">
 <li>敲入以下内容：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#! /bin/sh</span><br><span class="line">        ankiserverctl.py start /home/anki/anki/production.ini</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#! &#x2F;bin&#x2F;sh</span><br><span class="line">        ankiserverctl.py start &#x2F;home&#x2F;anki&#x2F;anki&#x2F;production.ini</span><br></pre></td></tr></table></figure>
 
 <p>保存并退出。</p>
 <ol start="3">
 <li>为脚本添加执行权限：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x anki-start.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x anki-start.sh</span><br></pre></td></tr></table></figure>
 
 <ol start="4">
 <li>然后切换root账号操作</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/rc.local</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano &#x2F;etc&#x2F;rc.local</span><br></pre></td></tr></table></figure>
 
 <ol start="5">
 <li>在<code>exit 0</code>前面加入以下内容：</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su anki -C &quot;/home/anki/anki-start.sh&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su anki -C &quot;&#x2F;home&#x2F;anki&#x2F;anki-start.sh&quot;</span><br></pre></td></tr></table></figure>
 
 <ol start="6">
 <li>保存，退出。重启测试。<br>同步正常，速度很快。</li>
@@ -715,8 +715,8 @@
 </ol>
 <h1 id="四-参考来源"><a href="#四-参考来源" class="headerlink" title="四. 参考来源"></a>四. 参考来源</h1><p>文主在折腾的过程中，主要参考了以下两篇文章：</p>
 <ol>
-<li>来自知乎的<a href="https://zhuanlan.zhihu.com/p/25187159">Linux下自建Anki服务器</a></li>
-<li>来自简书的<a href="http://www.jianshu.com/p/dfdeea9da532">利用远程服务器搭建Anki服务</a></li>
+<li>来自知乎的<a href="https://zhuanlan.zhihu.com/p/25187159" target="_blank" rel="noopener">Linux下自建Anki服务器</a></li>
+<li>来自简书的<a href="http://www.jianshu.com/p/dfdeea9da532" target="_blank" rel="noopener">利用远程服务器搭建Anki服务</a></li>
 </ol>
 <p>其他一些问题则是通过搜索解决的。</p>
 <p>当然了，个人精力和经历毕竟有限，不可能穷尽所有的情况。所以，你在折腾的过程中，有很大可能会遇到这里没有记录和说明的问题。不过没关系，这不是还有我嘛！</p>
@@ -980,7 +980,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Anki%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">一. 为什么要搭建自己的Anki服务器？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Anki%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">1. Anki是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Anki%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">2. 为什么要搭建自己的Anki服务器？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.2.1.</span> <span class="nav-text">1)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">1.2.2.</span> <span class="nav-text">2)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%9C%80%E8%A6%81%E7%9A%84%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.3.</span> <span class="nav-text">3. 需要的条件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">二.服务器的搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%88%91%E7%9A%84%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">1.我的安装环境：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%89%E8%A3%85"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%B5%8B%E8%AF%95"><span class="nav-number">2.3.</span> <span class="nav-text">3.测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%B7%BB%E5%8A%A0%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="nav-number">2.4.</span> <span class="nav-text">4.添加开机启动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89-%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">三. 客户端的设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Anki-for-Windows%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">1. Anki for Windows的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-AnkiDroid%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">2. AnkiDroid的设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B-%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90"><span class="nav-number">4.</span> <span class="nav-text">四. 参考来源</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-为什么要搭建自己的Anki服务器？"><span class="nav-number">1.</span> <span class="nav-text">一. 为什么要搭建自己的Anki服务器？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Anki是什么？"><span class="nav-number">1.1.</span> <span class="nav-text">1. Anki是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-为什么要搭建自己的Anki服务器？"><span class="nav-number">1.2.</span> <span class="nav-text">2. 为什么要搭建自己的Anki服务器？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.2.1.</span> <span class="nav-text">1)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">1.2.2.</span> <span class="nav-text">2)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-需要的条件"><span class="nav-number">1.3.</span> <span class="nav-text">3. 需要的条件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-服务器的搭建"><span class="nav-number">2.</span> <span class="nav-text">二.服务器的搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-我的安装环境："><span class="nav-number">2.1.</span> <span class="nav-text">1.我的安装环境：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-测试"><span class="nav-number">2.3.</span> <span class="nav-text">3.测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-添加开机启动"><span class="nav-number">2.4.</span> <span class="nav-text">4.添加开机启动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-客户端的设置"><span class="nav-number">3.</span> <span class="nav-text">三. 客户端的设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Anki-for-Windows的设置"><span class="nav-number">3.1.</span> <span class="nav-text">1. Anki for Windows的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-AnkiDroid的设置"><span class="nav-number">3.2.</span> <span class="nav-text">2. AnkiDroid的设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-参考来源"><span class="nav-number">4.</span> <span class="nav-text">四. 参考来源</span></a></li></ol></div>
             
 
           </div>
