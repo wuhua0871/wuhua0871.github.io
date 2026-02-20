@@ -1,23 +1,1315 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
-{% block title %}{{ page.title }} | {{ title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
 
-{% block content %}
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.0.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="——————《周易江湖》读书笔记———–刚刚读完了熊逸的《周易江湖》，挺有意思的一本书。熊逸用轻松的方式，把扑朔迷离、晦涩难懂的《周易》说的平实，通俗、易懂。 在书里面，有来自左传中丰富的卦例，讲故事的同时，一点点讲解八卦的基本知识和算卦、解卦的各种方法。然后又详细分析了素有“易之门”之称的乾卦和坤卦。这个讲卦的过程，也不是强调一家之言，更多的是把历代易学家们的不同意见一并列出来，然后说出自己的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人人都能用易经">
+<meta property="og:url" content="http://wuhua0871.com/2017/05/07/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8%E6%98%93%E7%BB%8F/index.html">
+<meta property="og:site_name" content="Wuhua0871&#39;s Webland">
+<meta property="og:description" content="——————《周易江湖》读书笔记———–刚刚读完了熊逸的《周易江湖》，挺有意思的一本书。熊逸用轻松的方式，把扑朔迷离、晦涩难懂的《周易》说的平实，通俗、易懂。 在书里面，有来自左传中丰富的卦例，讲故事的同时，一点点讲解八卦的基本知识和算卦、解卦的各种方法。然后又详细分析了素有“易之门”之称的乾卦和坤卦。这个讲卦的过程，也不是强调一家之言，更多的是把历代易学家们的不同意见一并列出来，然后说出自己的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-07c862888473bc40.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-c7f06015538cb965.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-2cd3929d321b29f2.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-b8038e064ac5441b.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-4e0b0d27faeedb01.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-b52b88edcdff4e5c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-9e757ce6bc3bf80a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-9e757ce6bc3bf80a.jpg">
+<meta property="article:published_time" content="2017-05-07T06:54:00.000Z">
+<meta property="article:modified_time" content="2020-11-21T12:35:25.181Z">
+<meta property="article:author" content="无华0871">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5010584-07c862888473bc40.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="http://wuhua0871.com/2017/05/07/人人都能用易经/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>人人都能用易经 | Wuhua0871's Webland</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wuhua0871's Webland</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">无华的网络空间</p>
+      
+    
+    
   </div>
 
-{% endblock %}
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;0&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;9&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;28&lt;&#x2F;span&gt;</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wuhua0871.com/2017/05/07/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8%E6%98%93%E7%BB%8F/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无华0871"/>
+      <meta itemprop="description" content="工程师|作死小能手|书虫|电影迷|跑者"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wuhua0871's Webland"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">人人都能用易经
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-05-07 14:54:00" itemprop="dateCreated datePublished" datetime="2017-05-07T14:54:00+08:00">2017-05-07</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-11-21 20:35:25" itemprop="dateModified" datetime="2020-11-21T20:35:25+08:00">2020-11-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E9%9A%8F%E7%AC%94%EF%BC%9B%E5%91%A8%E6%98%93/" itemprop="url" rel="index"><span itemprop="name">随笔；周易</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/05/07/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8%E6%98%93%E7%BB%8F/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/05/07/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8%E6%98%93%E7%BB%8F/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/5010584-07c862888473bc40.jpg"></p>
+<p>——————《周易江湖》读书笔记———–<br>刚刚读完了熊逸的《周易江湖》，挺有意思的一本书。熊逸用轻松的方式，把扑朔迷离、晦涩难懂的《周易》说的平实，通俗、易懂。</p>
+<p>在书里面，有来自左传中丰富的卦例，讲故事的同时，一点点讲解八卦的基本知识和算卦、解卦的各种方法。然后又详细分析了素有“<strong>易之门</strong>”之称的乾卦和坤卦。这个讲卦的过程，也不是强调一家之言，更多的是把历代易学家们的不同意见一并列出来，然后说出自己的具体偏向，或者来上一句：<em>反正意见这么多，信哪种你自己选吧！</em></p>
+<span id="more"></span>
+
+<p>先说一下我的整体意见：<strong>推荐阅读</strong>。读完本书之后，你至少有以下收获：</p>
+<ol>
+<li>周易的组成：《易经》、《易传》</li>
+<li>知道八卦是怎么回事了</li>
+<li>知道为什么除了八卦还有个六十四卦了</li>
+<li>至少能够学会两种算卦方法：<strong>金钱卦法</strong>和<strong>蓍草法</strong></li>
+<li>学会变卦的原理和具体方法</li>
+<li>学会至少三种解卦方法：<ul>
+<li>卦辞爻辞法</li>
+<li>得位、得中法</li>
+<li>乘承法</li>
+</ul>
+</li>
+<li>行走江湖行骗（或者防骗）的熊氏四大定理</li>
+<li>了解《周易》对中华文明的深远影响，特别是对儒家文化的影响。</li>
+</ol>
+<p>总之，不管你是一个想要了解神秘的《周易》与中华文明的渊源，还是带着批判的眼光，想了解算卦大师们背后的秘密以提升自己的防骗能力，甚至是想学习算卦相关知识方便行走江湖，都能从这本书中有所收获。</p>
+<p>下面，我把书中的一些个人感兴趣的知识点作个整理。</p>
+<p>注意：<strong>以下观点均来自书中，并不代表本人观点和立场。而我自己，也是带着批判的眼光来学习和探讨的。这一点，万望大家知悉。</strong></p>
+<p>下面开始进入正题。</p>
+<h1 id="何谓《周易》？"><a href="#何谓《周易》？" class="headerlink" title="何谓《周易》？"></a>何谓《周易》？</h1><p>我们一般所说的**《易经》或者《周易》**，严格来说，<strong>其实是由两部分组成的，一部分叫《易经》，另一部分叫《易传》。</strong></p>
+<p><strong>《易经》（狭义的）是现存的有关周易的最原始的文献，相传为周文王所作。</strong> 它内容简短，都是些关于占卜的话。</p>
+<p>而 <strong>《易传》，是一系列文献的统称，包括《彖》《大象》《小象》《文言》《系辞》等十篇内容，也称为 “十翼”</strong>。它主要是战国时期的一些学者为《易经》所作的解释和阐发。《易传》借着占卜，阐发了很多哲学思想。如清华大学的校训“<strong>自强不息，厚德载物</strong>”都是出自《易传》，更严格地讲，是出自十篇《易传》中的《大象》。基本上，现在认为的周易里面的包含的各种人生哲理和政治哲学，都是从《易传》来的，跟《易经》没有关系。</p>
+<p>打个比方来说二者的关系，《易经》是教科书，而《易传》呢，则是与《易经》配合使用的一系列教辅。在时间上，《易传》至少晚于《易经》几百年。只是后来，后人又写了很多关于教辅《易传》的教辅。为了明确《易传》这系列教辅的权威性，后人索性就把教科书《易经》和教辅《易传》编排在了一起。这就是我们通常看到的《易经》（广义）或者《周易》。</p>
+<p>另外，古人看的“易”很可能跟我们现在看到的是不一样的。<strong>在《周易》之前，还曾经有过两个权威版本的“易”：《连山易》和《归藏易》</strong>，主要流行于夏代和商代，后来都失传了。而且，《周易》在当时恐怕各地也有不同的版本。</p>
+<h1 id="八卦的基本知识"><a href="#八卦的基本知识" class="headerlink" title="八卦的基本知识"></a>八卦的基本知识</h1><h2 id="1-什么是八卦"><a href="#1-什么是八卦" class="headerlink" title="1. 什么是八卦"></a>1. 什么是八卦</h2><p>按通行说法，八卦是最早产生的。</p>
+<p>相传八卦为伏羲氏所创，叫做先天八卦。后来周文王对其进行了改进，于是便有了后天八卦。它们的组成相同，只是排列顺序不一样。</p>
+<p>八卦分别为：<strong>圪，坎，艮，震，巽，离，坤，兑。</strong> 它们都是由三个爻构成的，我们可以叫它们为“<strong>三爻卦</strong>”。把两个三爻卦上下重叠，就构成了一个“<strong>六爻卦</strong>”。其中，下面的叫做<strong>内卦</strong>，上面的叫做<strong>外卦</strong>。内卦表示求卦人自己，外卦表示求卦人以外的事物，比如环境、敌人等。</p>
+<p>我们可以很快地算出，六爻卦一共有8X8&#x3D;64卦（因为上下是可以相同的）。</p>
+<p>此外，关于六爻卦，有一种互体的说法，一个六爻卦里面，还包含了另外两个三爻卦，分别由二、三、四爻和三、四、五爻组成。</p>
+<p>但是，八卦很可能只是我们的一种的理解方法，因为《易经》里面从来没有提到过。</p>
+<h2 id="2-什么是爻？"><a href="#2-什么是爻？" class="headerlink" title="2. 什么是爻？"></a>2. 什么是爻？</h2><p>爻是卦的最基本的组成单位。分为阴爻和阳爻两种。阳爻用符号“——”表示，阴爻用符号“- -”表示。一个三爻卦有三个爻，一个六爻卦有六个爻。</p>
+<p>阴爻和阳爻是相互对立的。一般说是阴和阳的对立，但是你换成其他对立的东西来理解也是可以的，比如奇偶，明暗等。特别是奇偶，在算卦的时候特别有用。</p>
+<h2 id="3-太极生阴阳？"><a href="#3-太极生阴阳？" class="headerlink" title="3. 太极生阴阳？"></a>3. 太极生阴阳？</h2><p>“易有大恒，是生两仪。两仪生四象，四象生八卦。”</p>
+<p><strong>卦的组成</strong> 不单只是有阴阳两种，<strong>其实是四种：老阴，少阴，老阳，少阳。</strong></p>
+<p>老，意味着事物发展到了末段，即将发生变化。因此，算卦的时候，也有了本卦和变卦的说法。“<strong>变卦</strong>”一词就是这么来的。</p>
+<p>具体的变化规则为：老阴变少阳，老阳变少阴。这里知道就行，算卦方法里面还会再说的。</p>
+<h2 id="4-八卦的象征意义"><a href="#4-八卦的象征意义" class="headerlink" title="4. 八卦的象征意义"></a>4. 八卦的象征意义</h2><p>八卦是八个抽象的符号，它们都有各自的象征物。最自然的一组是：<strong>乾，坤，震，巽，坎，离，艮，兑分别象征天，地，雷，风，水，火，山，泽。</strong> 另一套常用的象征体系为：健，顺，动，入，陷，丽，止，悦。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/5010584-c7f06015538cb965.jpg" alt="八卦的象征意义"></p>
+<p>另外，八卦还是分阴阳的。放在家庭里面来说，<br><strong>阳卦：乾（父）、震（长男）、坎（中男）、艮（少男）<br>阴卦：坤（母）、巽（长女）、离（中女）、兑（少女）</strong></p>
+<p>此外，八卦还常用来表示方位。</p>
+<p>在具体应用的时候，八卦还能根据上面的象征物，引申出一些更具体的事物。</p>
+<h1 id="怎么算卦？"><a href="#怎么算卦？" class="headerlink" title="怎么算卦？"></a>怎么算卦？</h1><h2 id="1-如何用蓍草算卦"><a href="#1-如何用蓍草算卦" class="headerlink" title="1. 如何用蓍草算卦"></a>1. 如何用蓍草算卦</h2><p>用周易来算卦，方法很多。但是基本都是后来附会出来的，而且越往后越复杂。现在好多算卦方法，除了八卦里面的阴阳外，还要讲究算卦人的生辰八字，算卦的天干地支时辰，有的还要再加上五行生克，不一而足。</p>
+<p>现存最早的算卦方法的记录，来自《易传》十翼之一的的《系辞》。但语焉不详语，指代不明，连宋朝顶尖的易学大师朱熹也很无奈地表示：讲是讲了，但是说的也太简略了，根本搞懂怎么玩儿呀！</p>
+<p>但俗话说的好：<strong>“人有多大胆，地有多高产。”“不怕做不到，就怕想不到。”</strong></p>
+<p>所以，他们终究还是搞出来了一套切实可行方法。通行的解读如下：</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p> 准备五十五根蓍草，没有就用牙签或者火柴棍代替，再没有用围棋子呀什么的也行。总之一句话，用什么都行，只要你方便就好。下面我们就用围棋子举例好了。</p>
+<p> 再多说一句，要是没有找够五十五颗围棋子其实也能算，只要找五十颗就可以了。再少点儿，四十九颗也行。因为不管你找了多少颗，真正使用的都只有四十九颗。</p>
+<p>那为什么要这么纠结五十五呢？因为它很牛，是所谓的“大衍之数”，是最吉利的。你算卦什么的折腾半天，不就是想讨个吉利么！</p>
+<p>说完了准备工作，下面就正式开始讲算法了。我们尽量说简单点儿。</p>
+<h3 id="第一变"><a href="#第一变" class="headerlink" title="第一变"></a>第一变</h3><ol>
+<li><strong>把准备好的围棋子留下四十九颗，多余的都拿掉。</strong> 这可不是吃饱了撑的，古人就是觉得这样意义重大。虽然我也表示不能理解……</li>
+<li><strong>一划开天</strong> ：把棋子随机分成两组，左为天，右为地。</li>
+<li><strong>三才聚汇</strong> ：从右边的棋子中拿出一颗，象征人。这样一来 <strong>天，地，人</strong> 就都全了，<strong>是为“三才”</strong>。</li>
+<li>数数左边的棋子有多少颗，把结果除以4，看余数是几，并把余数拿出来。整除当余数为4。（4在古代没有任何不吉利的意思，一般认为象征四季）。</li>
+<li>对右边棋子同样来一次。余数跟上面一步的余数放一起。</li>
+<li>把第3步里拿掉的象征人的棋子和上两步的余数放一起。</li>
+</ol>
+<p>到此，第一变结束。</p>
+<p>注意哦，第一变得到的结果只能是5颗或者9颗。如果不对请重来！</p>
+<h3 id="第二变"><a href="#第二变" class="headerlink" title="第二变"></a>第二变</h3><ol>
+<li>把第一变剩下的棋子并到一起。</li>
+<li>把这些棋子按第一变2到6步的顺序来一遍。</li>
+</ol>
+<p>这样，第二变就结束了。</p>
+<p>温馨小提示：这一次得到的结果只能是4颗或者8颗。不对请重来！</p>
+<h3 id="第三变"><a href="#第三变" class="headerlink" title="第三变"></a>第三变</h3><ol>
+<li>用剩下的棋子重复第二变所有步骤。</li>
+<li>把最后剩下的棋子合并，数一下还有多少颗。注意，这里只会出现24，28，32，36四各种情况。</li>
+</ol>
+<h3 id="算出第一爻"><a href="#算出第一爻" class="headerlink" title="算出第一爻"></a>算出第一爻</h3><p>经过前面繁复的三变，并且每一步都没有出错，最后得到的数字也是四种情况里面的一种的话，恭喜你！你离第一爻了只有一步之遥了。</p>
+<p>接下来我们这样操作：把上一步的数出来棋子数除以4，算出结果。这个结果，就是我们的第一爻。</p>
+<p>由于第三变的结果只有四种情况，与之对应的，这一步的结果也只有四种可能：6，7，8，9。分别对应的是老阴，少阳，少阴和老阳。阴阳是根据奇偶来判断。（当然了，这个自己记心里就行了，说出口来就不好骗钱了）</p>
+<h3 id="算出剩下五爻"><a href="#算出剩下五爻" class="headerlink" title="算出剩下五爻"></a>算出剩下五爻</h3><p>有了上面的铺垫，接下来就简单了：重复上面的重复上面的三变五次，依次得出我们的剩下五爻，然后就可以得到一个完整的六爻卦了。</p>
+<p>有一点要说明的是，八卦的爻是从下往上数的。即第一爻在最下面，第六爻在最上面。在纸上写的时候，我们千万要记得这一条。不然算出来的卦可就不对了。</p>
+<p>在纸上写出刚才算出来的结果。可以直接写数字，也可以画阴爻阳爻。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/5010584-2cd3929d321b29f2.jpg" alt="记录1"></p>
+<p>如果你是画阴爻阳爻的话，有个细节要注意一下。前面我们说过，老阴和老阳是不稳定，要发生变化的。但是画阴阳爻的方法只有两种，怎么表示这种要变化的爻呢？一般采用的方法是，在老阴爻或者老阳爻的旁边，画一个小叉或者一个小圈。这样就知道了，这爻是要变的。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/5010584-b8038e064ac5441b.jpg" alt="记录2"></p>
+<p>上图是书上的比较详细的写法。</p>
+<p>直接来书里面作者给的例子。他算出来的是本卦豫卦。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/5010584-4e0b0d27faeedb01.jpg" alt="变卦"></p>
+<p>现在我们来算一下，算出一爻需要三变，那么六爻一共就是十八变，对吧！听着耳熟不？没错！“<strong>女大十八变</strong>”就是从这里来的。而且里面的十八，跟什么十八岁没有任何关系，而是说要经过复杂的十八变才能算出来一个卦来，后来人们就用十八变来表示变化很多，变化复杂的的意思。所以呀，“女大十八变”是说女的从小女孩长到大女人，会发生很大的变化。而不是说女的一过了十八岁就变漂亮了之类的。我们现代人哪，就喜欢<strong>望文生义</strong>和<strong>断章取义</strong>。</p>
+<h2 id="2-怎么算金钱卦"><a href="#2-怎么算金钱卦" class="headerlink" title="2. 怎么算金钱卦"></a>2. 怎么算金钱卦</h2><p>到目前为止，我们已经说完了系辞里面的记载算卦的，下面再来看另外一种简便一点儿的算卦方法：金钱卦法。</p>
+<p>金钱卦的算法，据说是汉朝的京房发明的，在唐代颇为流行。简言之，它就是用三枚铜钱取代四十九根蓍草，每扔一次就能得出一爻，扔六次就能算出一个六爻卦。其特点是用时短，易于取材，操作方便。缺点呢？可能是没有蓍草算卦法正宗吧。</p>
+<p>但其实呢，金钱卦还有另外一个致命的缺点：它的出卦概率跟蓍草法是完全不一样的。比方说，算出乾卦九五爻的概率，从蓍草法的万分之一提高到了金钱卦法的千分之五，足足是原来的五十倍！</p>
+<p>一般来说，算金钱卦要用汉代的五铢钱。这种钱外圆内方，象征着天圆地方，而且还时间久远，故而拥有神秘力量！如果真找不到这种汉代的五铢钱其实也不打紧，只要是三个同样的，容易分出正反面的东西也就行了，我觉着五毛的硬币就挺好用的（注意，此五毛非彼五毛）。</p>
+<p>三枚硬币同时扔下会有四各组合：两正一反，两反一正，三反，三正。分别表示少阴，少阳，老阴，老阳。这个呀，其实实到底，这个就是按照正面的数目来决定的，奇数个为阳，偶数个为阴。三个反反面也算做正面出现了偶数次。跟前面的6，7，8，9一样的玩儿法。而且它们是能够一一对应起来的。具体如下表</p>
+<table>
+<thead>
+<tr>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>反反反</td>
+<td>正反反</td>
+<td>正正反</td>
+<td>正正正</td>
+</tr>
+<tr>
+<td>老阴</td>
+<td>少阳</td>
+<td>少阴</td>
+<td>老阳</td>
+</tr>
+</tbody></table>
+<p>后面的你都会了。按照上面讲的记录方法，每扔一次，记一爻，扔完六次之后，一卦就算完了。</p>
+<h2 id="3-是占卦还是算卦："><a href="#3-是占卦还是算卦：" class="headerlink" title="3. 是占卦还是算卦："></a>3. 是占卦还是算卦：</h2><p>卜和筮，是古代民间占问吉凶的两种方法，是古代巫术的一种表现。高中语文课本里面就有下面的说法。</p>
+<blockquote>
+<p>尔卜尔筮,体无咎言<br>—《诗经·卫风·氓》</p>
+</blockquote>
+<p>可见卜和筮并不是一回事儿，且二者存在明确的区别。</p>
+<p>占卜，是指在龟板或兽骨上钻刻，再用火灼，看裂纹来定吉凶。预示吉凶的裂纹，叫“兆”。筮，是用蓍草通过一系列演算，得出的数字，然后根据数字查阅相关手册，得到占算辞，从而判断吉凶。</p>
+<p>简言之，一个用动物，一个用植物；一个重观察，一个重演算。</p>
+<p>据此可知，更适合说是“算卦”，而不是说成“占卦”，或者“卜卦”。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/5010584-b52b88edcdff4e5c.jpg" alt="厚厚的古书"></p>
+<h1 id="八卦的坐标系统"><a href="#八卦的坐标系统" class="headerlink" title="八卦的坐标系统"></a>八卦的坐标系统</h1><p>算出了一卦，在查《易经》看吉凶之前，还有个事情要说明一下。那就是八卦的坐标系统。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/5010584-9e757ce6bc3bf80a.jpg" alt="八卦的坐标"></p>
+<p>前面我们已经说过了八卦的爻是从下往上数的，但是还是有一些东西并没有说清楚。</p>
+<p>如上图，是豫卦的用爻表示的图形。但是它又进行了更细致的划分。</p>
+<p>在第三爻和第四爻之间划了一条虚线，把整个卦一分为二，下面是三爻的坤卦，也就是豫卦的内卦，主要表示求卦人自己的情况，上面是个三爻的震卦，主要表示求卦人外部的情况。</p>
+<p>每个三爻卦中间的那一爻叫做中位，在上图的最左边也有标出来了。</p>
+<p>此外，在每一爻的左边都有两个字“六二”，“九四”这么两个字，是什么意思呢？这个就是八卦专门的一种坐标表示方法。比如六二，前面的六表示这爻的属性，六表示的是阴爻，九表示的是阳爻。后面的二表示这一爻是整个六爻卦的第二爻。<strong>六二</strong> 的意思就是说，它是 <strong>阴爻，在整个卦中位于第二爻的位置</strong>。可别小看这六二爻，它的爻辞这这么说的：</p>
+<blockquote>
+<p>六二，介于石，贞吉<br>《象》曰：“不终日贞吉”，以中正也。</p>
+</blockquote>
+<p>看到没？！<strong>蒋介石，字中正</strong>。名取于爻辞，字取于象，都来自于这豫卦的六二爻。</p>
+<p>同理，<strong>九四</strong> 的意思就是：它是个 <strong>阳爻，在整个卦中位于第四爻的位置</strong>。</p>
+<p>但是有两个例外的，就是第一爻和最后一爻。它们分别用“<strong>初</strong>”和“<strong>上</strong>”表示。同时，他们是先说位置，后说属性。图中就是“<strong>初六</strong>”和“<strong>上六</strong>”。</p>
+<p>其实呀，用法和说法，对于经常看古装片的我们来说，这个应该不会太陌生的，更多可能是没有意识到而已。比如我们如雷贯耳的“<strong>九五之尊</strong>”的说法，就是从乾卦的九五爻来的。通过这些（包括前面的“变卦”和“女大十八变”）例子里面，《周易》对我们中华文明，或者说是华夏文明的深远影响，由此可见一斑。</p>
+<p>但是前面不是明明说用六，七，八，九四个数字来表示阴阳的，怎么到了爻辞里面就只能看到六和九两个呢？这个是跟我们怎么查看爻辞来断吉凶紧密相关的，留待后面再说。</p>
+<h1 id="怎样解卦"><a href="#怎样解卦" class="headerlink" title="怎样解卦"></a>怎样解卦</h1><p>卦算出来了，那怎么用它来断吉凶呢？毕竟这才是我们算卦的目的呀。对吧！</p>
+<p>算卦方法说完了，我们来说一下解卦的方法。</p>
+<p>解封的方法其实方法不止一种。其中最正统的，当然是查《易经》里面的卦辞和爻辞了。再配合《易传》的解读，以及后人对于这些解读的解读，就可以很全面地把求卦人的诉求很全面具体地分析出来了。</p>
+<p>如书中所讲，《左传》里面记载的那些神乎其神的填例，大多都是这么来解读的。有的甚至一卦就把三代人的事情全部说尽了。不但准确，而且相当具体。具体到怎么什么程度呢？反正就是超乎你的想象就对了。毕竟那么多事情，我一句两句的也说不清楚。真想知道的话，就自己去看书吧。</p>
+<h2 id="卦辞爻辞到底谁说了算？"><a href="#卦辞爻辞到底谁说了算？" class="headerlink" title="卦辞爻辞到底谁说了算？"></a>卦辞爻辞到底谁说了算？</h2><p>虽说按图索骥很简单，但是这里还是有个小问题：每个卦都有卦辞和爻辞，还有一堆《彖》《象》《方言》里边的东西。这么多东西到底应该以哪个为主呢？万一它们说的不一样，那又该听哪个呢？</p>
+<p>有没有什么简单明了的判定方法，可以方便地让我们知道，经过重重麻烦算出来的卦，究竟是吉不是不吉？</p>
+<p>答案是有的。只是这套方法也是后人搞出来的，准确地说呢，就是前面提到的那个宋朝易学大家朱熹他们搞出来的。这套方法一共概括了七种情况。它们分别是：</p>
+<ol>
+<li>算出来的卦中只有一爻是变爻的，用本卦的变爻爻辞来判定吉凶。</li>
+<li>有两个变爻的，用本卦里面这两个变爻和爻辞来判断吉凶，并且以位置在上面的那爻为主。</li>
+<li>有三个变爻的，用本卦和变卦的卦辞来定吉凶，并且以本卦为主。</li>
+<li>有四个变爻的，用变卦两个不变爻的爻辞来判断吉凶。（以位置在上面的为主？书中没写，我猜的）</li>
+<li>有五个变爻的，用变卦没变的那一爻的爻辞来判断吉凶。</li>
+<li>六爻都变的，又分两种情况：<ul>
+<li>本卦是乾卦或者坤卦时，用本卦的用九或者用六来判断吉凶</li>
+<li>其他卦，则用变卦的卦辞来判断吉凶</li>
+</ul>
+</li>
+<li>没有变爻的，用本卦的卦辞来决断吉凶。</li>
+</ol>
+<p>怎么样？看着挺多的，其实仔细梳理一下，还是挺有规律的，不是太难理解。多看几遍，总是能够掌握的。</p>
+<p>真正麻烦之处在于：卦爻辞和十翼里面的内容，全都没有清晰明确的解释。几乎每一句的意思都是有争议的，争议的大与小的区别而已。而且这种争议自古以来一直就有，说起来就让人头疼哪！</p>
+<p>当然，你说：我就看个简单地看个吉凶。又不像《左传》里面那样，要求从一卦就算出祖孙三代的所有事情，难道这样也不行吗？那倒也不是，许多卦爻辞里面，都是明确说的吉凶的。有的没有明说，但是也能体会出个大概。要求不高的话，这样也就足够了。至于那些卦爻辞什么的，究竟说了个什么意思，那是专家学者们才需要考虑的问题，是作者才会感到头疼的问题。我们小老百姓，才懒得操那份心呢。</p>
+<h2 id="不看卦爻，也能定吉凶"><a href="#不看卦爻，也能定吉凶" class="headerlink" title="不看卦爻，也能定吉凶"></a>不看卦爻，也能定吉凶</h2><p>人总是趋利避害的，并且能够偷懒的地方一定要偷懒，所以才有了 “<strong>懒惰是人类前进的灯塔。</strong>”“<strong>懒惰是人类进步的阶梯。</strong>”这样的说法。</p>
+<p>前面所说的七种看卦爻辞的方法搞定之后，还要去看佶屈聱牙，意思又不明确的古文，实在麻烦中的麻烦呀。要是有一种不用看古文也能够断吉凶的方法那该多好呀！</p>
+<p>你别说，这样的方法还真有！而且还不止一种。书中就为我们介绍了两种：得位得中法和乘承法。</p>
+<h2 id="得位与得中"><a href="#得位与得中" class="headerlink" title="得位与得中"></a>得位与得中</h2><p><strong>所谓得位是</strong> 这么个意思，前面我们已经说过好多次了，所谓的阴阳，不过是奇偶而已。同样的，在六爻卦的坐标体系里面，我们也是能够分出阴阳来的：爻数是奇数的为阳，爻数是偶数的为阴。这样一来，我们就可以把爻位分为阴位和阳位。如果 <strong>一个阴爻它在一个阴位上，一个阳爻在一个阳位上</strong>，那么我们就说它是得位的，否则就是不当位。</p>
+<p>得中就更简单了。其实我们前面已经提到过了的。还是刚才说坐标的那个图。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/5010584-9e757ce6bc3bf80a.jpg" alt="八卦的坐标"></p>
+<p>看到最左边在两个中位没有？如果决定吉凶的卦爻在这两个中位上，那么它就是得中的，否则就是不得中。</p>
+<p>得位就吉，不得位就不吉；得中就是吉，不得中没有那么吉。看，就是这么简单。</p>
+<h2 id="乘与承"><a href="#乘与承" class="headerlink" title="乘与承"></a>乘与承</h2><p>这个就更简单了，完全从字面意思来理解就好了。</p>
+<p>所谓乘，就是乘坐。所谓承，就是承载。乘、承都是观察自己下面或者上面那一爻和自己的相对关系。</p>
+<p>天在上，地在下，或者说阳在上，阴在下，这是周易所说的天道。凡是符合天道的，就是吉的，凡是不符合天道的，就是不吉的。</p>
+<p>一个阳爻，它如果在一个阴爻的上面，那它的位置就是符合天道的，所以是吉的；如果它在一个阴爻的下面，那就不符合天道，所以是不吉的。阴爻正好跟它相反。一个阴爻，如果它是在一个阳爻的上面，那它的位置就是不符合天道的，所以是不吉的；如果它是在一个阳爻的下面，那就是符合天道的，所以是吉的。如果一个爻上面或者下面的属性是和它自己一样的，那么就不吉也不凶。</p>
+<p>经过观察你会发现，有这样两种比较特殊的情况，是不能根据乘承来断吉凶的。这两种情况分别是：</p>
+<ul>
+<li>一个阳爻，它下面是一个阴爻，上面也是一个阴爻；</li>
+<li>一个阴爻，它的上面和下面都是阳爻。</li>
+</ul>
+<p>这时就要用得位和得中的方法来确定吉凶了。</p>
+<h1 id="周易算卦准不准？"><a href="#周易算卦准不准？" class="headerlink" title="周易算卦准不准？"></a>周易算卦准不准？</h1><p>接下来，我们讨论一个算卦之人最为关心的话题：<strong>周易算卦到底准不准？</strong></p>
+<p><strong>准！百分之一万的准！</strong></p>
+<p>为什么这么说呢呢？且听我为你一一道来。</p>
+<p>首先，周易这个系统是 <strong>不能被证伪</strong> 的。也就是说，按照周易的理论，你是不能够任何一个反例来说明周易算卦是不准的。其次，就算不按周易的理论来，周易也是一定准的，算不准是你自己的问题。</p>
+<p>如果你按周易算了卦不准，那么只有两个可能。一个是因为你算卦的时候心不诚，所谓 <strong>心诚则灵</strong> 嘛！你自己心有杂念怎么能怪到周易的头上来呢？这个锅周易是不背！</p>
+<p>另外一种情况是你太心急了，卦象的结果还没到应验的时间，所谓“<strong>不是不报，时候未到</strong>”是也。你看左传里面那些卦例，不少都是一代人，甚至几代人才一一应验的。这才过了几天时间，你说你猴急个什么劲儿呢！</p>
+<p>看到了没？周易算卦从来都是灵的。</p>
+<p>所以说，我们今天的年轻人哪，不要轻易怀疑经典和权威！经典之所以经典，权威之所以权威，那都是有道理的！（<em>当然，对于这个，我就只是笑笑了！至于你怎么看，请随意！哈哈……</em>）</p>
+<h1 id="古人究竟信不信易经八卦？"><a href="#古人究竟信不信易经八卦？" class="headerlink" title="古人究竟信不信易经八卦？"></a>古人究竟信不信易经八卦？</h1><p>古人究竟信不信易经八卦？</p>
+<p>一个字讲清楚，<strong>信</strong>！</p>
+<p>一句话讲清楚，<strong>越到后来越信</strong>。</p>
+<p>其实，对于古人来说，特别是春秋时期的古人，用易经八卦占算吉凶，根本就是不入流的。它只不过是一种被没有经济基础的贫民所采用的对于甲骨占卜的廉价替代方案而已。想想也是，有身份的人都买大乌龟烧龟甲看裂纹去了，只有连小乌龟都买不起的贫下中农，才会扯上一堆草棍来在地上摆弄。</p>
+<p>但是随着时代的发展，烧龟甲和骨头这种 <strong>旧时王谢堂前燕</strong> 逐渐消失在历史的长河中，甚至都没有激起过一丝涟源。把倒是易经八卦这种当时不入流的货色，慢慢地飞入朱门和深宫大院，越来越被人们认可和重视，一直流传到了今天。</p>
+<h1 id="跟熊大师学习混江湖"><a href="#跟熊大师学习混江湖" class="headerlink" title="跟熊大师学习混江湖"></a>跟熊大师学习混江湖</h1><p>会算卦，会解卦就能够当大师行走江湖了？</p>
+<p>大写的NO！</p>
+<p>你想多了兄弟，江湖哪儿有那么容易行走的。会算卦和解卦真的不够！</p>
+<p>熊大师也是很能理解我们的难处呢，所以在讲解八卦易经相关知识的同时，还有情大奉送了“<strong>熊大师四定理</strong>”。现在我们就一起来看看熊大教导我们的混迹江湖的正确姿势。</p>
+<p>我们先粗暴简单地罗列一下所谓的四大定理，内容如下：</p>
+<blockquote>
+<p>熊一定理：人类，尤其是女人，需要的往往并不是正确答案，而是最接近、但不完全等于心理预设值的答案。</p>
+<p>熊二定理：人类，尤其是女人，需要的往往不是明白的答案，而是糊涂的答案。</p>
+<p>熊三定理：人类，尤其是女人，往往只会记住愿意相信的东西，而对不愿意相信的东西却很容易忘记。</p>
+<p>熊四定理：很多时候，算命的作用等于筛子。</p>
+</blockquote>
+<p>就个人的理解来说，熊逸在这里其实是向我们讲述了算命为什么一直受欢迎的原因。他用简洁的语文描述了现象，又用更多的篇幅介绍了背后的心理机制。一到三条都很容易理解，我就不多说了。我主要讲一下最后一条是在表达什么意思。</p>
+<p>作者在这里想表达的意思是，虽然人们口口声声说想要自由，想要更多的选择，但是真实情况并不是这样的。这些都只是假象而已。真相是：人们都厌恶选择，甚至是恐惧选择。这样作者说当然有是他的道理的。他在书中阐述的观点是：<strong>人们所谓的想要选择，喜欢选择，只是针对于选项在三个以下时</strong>。</p>
+<p>当选项超过三个时，大多数根本就无人选择，往往会逃避选择。很不幸的是，生活往往是复杂的，很多时候都是有超过三个选项的。所以呢，算命先生的作用，就是帮助这些人把多余的选项去掉，留下那么两三个让他们自己选。算命先生有钱拿，无助的人们解决了问题，可谓是皆大欢喜。</p>
+<p>对于这个理论，我并没有深入研究和进一步查证。但是我可以从下面这几个角度简单来说一下。</p>
+<p>博弈论里面有一个经典理论叫做种族隔离，用通俗的话来说就是，如果事事都让人们自主决定，往往会得到大家都满意（或者都不满意），但往往更糟的结果。社会经济学也认为，完全的民主会降低社会的效率，还会导致大家的生活水平明显下降。职场上，很多人都认为，所谓优秀的员工，就是能把领导交给的问答题，变成只有有限几个选项的选择题，并且让领导选出自己喜欢的选项，仅此而已。</p>
+<p>神奇吧？不同的事情，基于不同的理论基础，却得出了极其相似解决方案和套路。难道这个 就是所谓的大道至简？殊途同归？只是我始终有个疑问：把精简选项这种重要工作交给算命先生来做，真的靠谱么？</p>
+<p>顺着作者的思路想下去，我还发现了这样一点：遇事先找算命先生，其实是一个推卸责任的机制。这样一来，如果最后事情成了，那就是TA当初英明神武的结果；如果事情没成，就可以振振有词地说：都怪当初听了XX算命先生的话！立马就把责任推得一干二净了。</p>
+<p>当然了，上帝给你一根棍子，是用来当擀面杖，还是用来打人，这取决于你自己。同样的道理，熊逸总结出来的这么几条，是拿来傍身防骗，还是当成骗人钱财和利器，亦或是当听个乐子，也完全是由我们自己选择的。</p>
+<p>那么，问题来了：<strong>你准备用它来干嘛呢？</strong></p>
+<h1 id="最后来一段结语"><a href="#最后来一段结语" class="headerlink" title="最后来一段结语"></a>最后来一段结语</h1><p>其实书中的内容不止这些。书中引自《左传》里面的那些卦例，真的是精彩极了，有意思极了。当故事书看也是相当不错的。</p>
+<p>此外，书中还花了大量篇幅来讲解乾坤两卦。当中作者还表达了一些不同于众人的见解，逻辑严密，推理合情合理，很让人耳目一新。这些观点也是很值得了解一下的。但是时间有限，内容庞杂，我就不一一列出来了。各位有兴趣的话就自己去看书吧。</p>
+<p>今天的人们研究周易，很多时候并不是为了算卦断吉凶，更多地是出于对周易文化的好奇而进行探索。周易，其实早已溶进了我们的文化中，溶进了我们的血液里，成为我们不可分割的一部分。不管你懂不懂周易，不管你对周易感不感兴趣，周易一直都在深深影响着我们，只是我们没有察觉到而已。这些影响，我们仍然会传递下去。</p>
+<p>各位，晚安！</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+  <img id="wechat_subscriber_qcode" src="/images/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" alt="无华0871 wechat" style="width: 200px; max-width: 100%;"/>
+  <div>感谢阅读！欢迎扫码订阅我的公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="无华0871 微信支付"/>
+        <p>微信</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="无华0871 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>无华0871</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://wuhua0871.com/2017/05/07/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8%E6%98%93%E7%BB%8F/" title="人人都能用易经">http:&#x2F;&#x2F;wuhua0871.com&#x2F;2017&#x2F;05&#x2F;07&#x2F;%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8%E6%98%93%E7%BB%8F&#x2F;</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;&#x2F;i&gt;BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/20/%E4%BD%A0%E9%82%A3%E4%B9%88%E8%BF%B7%E4%BF%A1%E4%BD%A0%E5%B1%85%E7%84%B6%E4%B8%8D%E7%9F%A5%E9%81%93/" rel="next" title="你那么迷信你居然不知道！">
+                <i class="fa fa-chevron-left"></i> 你那么迷信你居然不知道！
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/10/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AA%E8%83%BD%E5%81%9A%E4%B8%AA%E5%9F%8E%E9%87%8C%E4%BA%BA/" rel="prev" title="为什么我只能做个城里人">
+                为什么我只能做个城里人 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="无华0871"/>
+            
+              <p class="site-author-name" itemprop="name">无华0871</p>
+              <p class="site-description motion-element" itemprop="description">工程师|作死小能手|书虫|电影迷|跑者</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank">&lt;img src&#x3D;&quot;&#x2F;images&#x2F;cc-by-nc-sa.svg&quot; alt&#x3D;&quot;Creative Commons&quot;&#x2F;&gt;</a>
+             </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%95%E8%B0%93%E3%80%8A%E5%91%A8%E6%98%93%E3%80%8B%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">何谓《周易》？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AB%E5%8D%A6%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="nav-number">2.</span> <span class="nav-text">八卦的基本知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E5%85%AB%E5%8D%A6"><span class="nav-number">2.1.</span> <span class="nav-text">1. 什么是八卦</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%BB%EF%BC%9F"><span class="nav-number">2.2.</span> <span class="nav-text">2. 什么是爻？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%A4%AA%E6%9E%81%E7%94%9F%E9%98%B4%E9%98%B3%EF%BC%9F"><span class="nav-number">2.3.</span> <span class="nav-text">3. 太极生阴阳？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%85%AB%E5%8D%A6%E7%9A%84%E8%B1%A1%E5%BE%81%E6%84%8F%E4%B9%89"><span class="nav-number">2.4.</span> <span class="nav-text">4. 八卦的象征意义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%8E%E4%B9%88%E7%AE%97%E5%8D%A6%EF%BC%9F"><span class="nav-number">3.</span> <span class="nav-text">怎么算卦？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%A6%82%E4%BD%95%E7%94%A8%E8%93%8D%E8%8D%89%E7%AE%97%E5%8D%A6"><span class="nav-number">3.1.</span> <span class="nav-text">1. 如何用蓍草算卦</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">3.1.1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%8F%98"><span class="nav-number">3.1.2.</span> <span class="nav-text">第一变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%8F%98"><span class="nav-number">3.1.3.</span> <span class="nav-text">第二变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E5%8F%98"><span class="nav-number">3.1.4.</span> <span class="nav-text">第三变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E5%87%BA%E7%AC%AC%E4%B8%80%E7%88%BB"><span class="nav-number">3.1.5.</span> <span class="nav-text">算出第一爻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E5%87%BA%E5%89%A9%E4%B8%8B%E4%BA%94%E7%88%BB"><span class="nav-number">3.1.6.</span> <span class="nav-text">算出剩下五爻</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%80%8E%E4%B9%88%E7%AE%97%E9%87%91%E9%92%B1%E5%8D%A6"><span class="nav-number">3.2.</span> <span class="nav-text">2. 怎么算金钱卦</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%98%AF%E5%8D%A0%E5%8D%A6%E8%BF%98%E6%98%AF%E7%AE%97%E5%8D%A6%EF%BC%9A"><span class="nav-number">3.3.</span> <span class="nav-text">3. 是占卦还是算卦：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AB%E5%8D%A6%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F"><span class="nav-number">4.</span> <span class="nav-text">八卦的坐标系统</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%8E%E6%A0%B7%E8%A7%A3%E5%8D%A6"><span class="nav-number">5.</span> <span class="nav-text">怎样解卦</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%A6%E8%BE%9E%E7%88%BB%E8%BE%9E%E5%88%B0%E5%BA%95%E8%B0%81%E8%AF%B4%E4%BA%86%E7%AE%97%EF%BC%9F"><span class="nav-number">5.1.</span> <span class="nav-text">卦辞爻辞到底谁说了算？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E7%9C%8B%E5%8D%A6%E7%88%BB%EF%BC%8C%E4%B9%9F%E8%83%BD%E5%AE%9A%E5%90%89%E5%87%B6"><span class="nav-number">5.2.</span> <span class="nav-text">不看卦爻，也能定吉凶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%97%E4%BD%8D%E4%B8%8E%E5%BE%97%E4%B8%AD"><span class="nav-number">5.3.</span> <span class="nav-text">得位与得中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%98%E4%B8%8E%E6%89%BF"><span class="nav-number">5.4.</span> <span class="nav-text">乘与承</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%91%A8%E6%98%93%E7%AE%97%E5%8D%A6%E5%87%86%E4%B8%8D%E5%87%86%EF%BC%9F"><span class="nav-number">6.</span> <span class="nav-text">周易算卦准不准？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%A4%E4%BA%BA%E7%A9%B6%E7%AB%9F%E4%BF%A1%E4%B8%8D%E4%BF%A1%E6%98%93%E7%BB%8F%E5%85%AB%E5%8D%A6%EF%BC%9F"><span class="nav-number">7.</span> <span class="nav-text">古人究竟信不信易经八卦？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%9F%E7%86%8A%E5%A4%A7%E5%B8%88%E5%AD%A6%E4%B9%A0%E6%B7%B7%E6%B1%9F%E6%B9%96"><span class="nav-number">8.</span> <span class="nav-text">跟熊大师学习混江湖</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%80%E5%90%8E%E6%9D%A5%E4%B8%80%E6%AE%B5%E7%BB%93%E8%AF%AD"><span class="nav-number">9.</span> <span class="nav-text">最后来一段结语</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2026</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">无华0871</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'iI8y8a1tY6hQP32j3uM1pDmL-gzGzoHsz',
+    appKey: 'jWWnu8k2gPEerdONej1Acada',
+    placeholder: '来呀，随便说两句！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+</body>
+</html>

@@ -1,23 +1,1131 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
-{% block title %}{{ page.title }} | {{ title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
 
-{% block content %}
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.0.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="虽然不怎么甘心，但还是得承认：这么多年来父母一直都是对了。 一话得从二十多年前说起。 那时的我还是个小孩，瘦小，倔强，干活慢，没力气。 “像你这样子，长大了连自己都养不活！”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为什么我只能做个城里人">
+<meta property="og:url" content="http://wuhua0871.com/2017/06/10/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AA%E8%83%BD%E5%81%9A%E4%B8%AA%E5%9F%8E%E9%87%8C%E4%BA%BA/index.html">
+<meta property="og:site_name" content="Wuhua0871&#39;s Webland">
+<meta property="og:description" content="虽然不怎么甘心，但还是得承认：这么多年来父母一直都是对了。 一话得从二十多年前说起。 那时的我还是个小孩，瘦小，倔强，干活慢，没力气。 “像你这样子，长大了连自己都养不活！”">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-a26b6c59d4b944a5.jpg">
+<meta property="article:published_time" content="2017-06-10T02:12:00.000Z">
+<meta property="article:modified_time" content="2020-11-21T12:35:08.569Z">
+<meta property="article:author" content="无华0871">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5010584-a26b6c59d4b944a5.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="http://wuhua0871.com/2017/06/10/为什么我只能做个城里人/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>为什么我只能做个城里人 | Wuhua0871's Webland</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wuhua0871's Webland</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">无华的网络空间</p>
+      
+    
+    
   </div>
 
-{% endblock %}
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;0&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;9&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;28&lt;&#x2F;span&gt;</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wuhua0871.com/2017/06/10/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AA%E8%83%BD%E5%81%9A%E4%B8%AA%E5%9F%8E%E9%87%8C%E4%BA%BA/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无华0871"/>
+      <meta itemprop="description" content="工程师|作死小能手|书虫|电影迷|跑者"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wuhua0871's Webland"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">为什么我只能做个城里人
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-10 10:12:00" itemprop="dateCreated datePublished" datetime="2017-06-10T10:12:00+08:00">2017-06-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-11-21 20:35:08" itemprop="dateModified" datetime="2020-11-21T20:35:08+08:00">2020-11-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/06/10/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AA%E8%83%BD%E5%81%9A%E4%B8%AA%E5%9F%8E%E9%87%8C%E4%BA%BA/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/06/10/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AA%E8%83%BD%E5%81%9A%E4%B8%AA%E5%9F%8E%E9%87%8C%E4%BA%BA/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/5010584-a26b6c59d4b944a5.jpg" alt="被囚禁的人"></p>
+<p>虽然不怎么甘心，但还是得承认：这么多年来父母一直都是对了。</p>
+<h1 id="一"><a href="#一" class="headerlink" title="一"></a>一</h1><p>话得从二十多年前说起。</p>
+<p>那时的我还是个小孩，瘦小，倔强，干活慢，没力气。</p>
+<p>“像你这样子，长大了连自己都养不活！”</p>
+<span id="more"></span>
+<p>每当我干活赶不上趟的时候，父亲或者母亲总会来上这么一句。口气固然是严厉的，不容置疑的，但话语里却没有一丝嘲弄或侮辱的意味，更多的是恨铁不成钢的叹息，和对我的未来深深的忧虑。</p>
+<p>但我那时是个小孩，刚十岁出头的小孩，哪里能够想到这些。所以听到这话儿，我心里都很不服气的，虽然嘴上不说，心里却早已暗下决心：<strong>谁说我长大养不活自己的！看我将来养活自己的给你们看！不但要养活我自己，我还要养活你们！</strong></p>
+<p>说实话，这事儿还真不能怪父母。作为一个土生土长的农村小孩，我无论干什么活都那么笨拙，那么慢条斯理，那么有气无力的，这换谁都得来气呀。</p>
+<p>那时我不单干活不行，身体也不行。个子小，还瘦的很。瘦到什么程度呢？据说我上一年级的时候，书包都是背不动的，每天中午和下午放学，都得母亲去半路接我回家才行。这个我没什么印象，是前几年从母亲口中听说的。当时我们讨论的是另外一个完全不相关的问题：那么瘦小的我，究竟是如何在短短几年长现在这么胖的……唉，我只能说，人生无常哪！</p>
+<p>既然又瘦又小，那打架当然是不行的了，所以男孩子们自然是不乐意带我一起玩儿的 <em>——当然，女孩子们就更不乐意带我玩儿了，但是我不说</em>。没小伙伴，也没玩具，又不让经常看电视，那能做的事情基本没有了，只剩下看书了。<em>（其实我的童年也没有那么糟糕啦，，只不过为了表现的需要和篇幅限制，我只好做点儿取舍了）</em></p>
+<p>说到看书，问题来了。父亲虽然有不少书，但都是医学相关的，对小孩子来说相当无趣，况且我那会儿还没识几个字呢，就是真心想看也看不懂哇。所以我能看的书，基本上也就只有我自己的书了。当然了，而且由于条件限制，我自己的书也都不是图画书、小人书之类的，全都是学校发的课本。所以其实我一直很羡慕小妹的，别的不说，单是这书，好不但可以看自己发的，还可以看我的。我知道你看到这些会感到有点儿悲催，但是我告诉你大可不必。那会儿的我可完全没有任何不快，还相当的乐在其中呢。</p>
+<p>所以啊，什么叫“<strong>人在江湖，身不由己</strong>”呀？说的就是我呀！我这么一个小孩，啥都不懂，本来完全没有要好好学习的想法，但是一连串的机缘巧合，硬是生生把我打造成了一个伪学霸。造化弄人呀！<em>（观众：得了便宜还卖乖，难道你不怕遭雷劈么！）</em></p>
+<p>接下来的事情就简单了。这次偶然的伪学霸的经历，让我深刻地明白了以下道理：</p>
+<ul>
+<li>只要考试考的好，老师就会护着你</li>
+<li>只要考试考的好，同学就不会轻易欺负你，还愿意跟你做朋友</li>
+<li>只要考试考的好，父母就不会让你干太多的活儿，也就会更少地挨骂</li>
+</ul>
+<p>接下来怎么办，傻子都知道啦，当然是继续考好试，当伪学霸啦！况且我也没那么傻，是吧！<em>（好吧，我承认，后面这句完全是我自我感觉良好。）</em> 于是乎，偿到了甜头的我卯足了劲儿，开足了马力，真的就把自己打造成了我们那个小地方的学霸。注：这里的学霸仅限于我们那个小地方而言。</p>
+<p>关于“我们那个小地方”究竟有多小，我能给你举一个相当生动形象的例子：</p>
+<blockquote>
+<p>我是我们高中毕业的第一屇学生，但是我大学还没毕业，我以前就读的高中就没了……</p>
+</blockquote>
+<p>就是有这么小。</p>
+<p>然后大学毕业，我回昆明工作。每天准点上班，经常加班，不准点下班。经常单休，偶尔双休。</p>
+<p>去年，我又和母亲开玩笑：“妈，你以前不是老说长大了不能养活自己么？你看我现在不活的好好的！”</p>
+<p>说完狡黠地看着她，一个劲冲她眨眼睛。</p>
+<p>母亲看着我笑笑，没有说话。</p>
+<p>我本来是想要得告诉她：“我知道你们以前是担心我。但是儿子我已经长大了，可以照顾好自己的，你们不用再为我操心了。”但是始终没能说出口。</p>
+<h1 id="二"><a href="#二" class="headerlink" title="二"></a>二</h1><p>但有一个问题，我当时并没有明白：<strong>养活我自己并不是我的功劳，而是我生对了时代。</strong></p>
+<p>什么意思？</p>
+<p>简单说就是，因为社会进步了，人们分工越来越细致，社会已经不再需要全能型选手了，需要的只是一颗颗有专业技能的螺丝钉。而我的教育背景，刚好使得我有能力扮演螺丝钉的角色，所以，我在这里能够活下来。</p>
+<p>因此，我不用像父母那样，需要知道什么时候插秧，什么时候打虫施肥；也不用知道从几月份开始不能早上放鸡出笼，从几月份开始要多给猪喂糠，少喂菜叶。只要上班下班，我就有米饭吃，就有肉吃。</p>
+<p>在我上班的地方，不用防着邻居晚上会偷偷把我田里的水放到他家田里去；也不用担心邻居会把家那半田埂挖了打到我田里来；更不用担心因为晚两天收稻子，却刚好赶上前一天夜里下暴雨，稻子全倒田里了只收上来一小半。卖钱的粮食没有了不说，还会被村里人在背后嚼上半年的舌头根子……</p>
+<p>所以，我喜欢我生活的城市，也只能生活在城市，只有城市才能养活我。在这里我不用跟谁勾心斗角，只要干好我自己的事情，就能活下去；在这里，我不用承受太多别人鄙夷的目光。一来是因为我根本就没有认识太多的人。二来是就算认识的人，大家了解也不太深，谁也不想无端给将来的自己添加任何阻力和障碍，所以不会轻易鄙视谁，轻看谁。在城市里，鄙视人的成本实在是太高了。</p>
+<p>如果回到农村去，不会种庄稼还是小事，就我这么个缺心眼的性格，不出几个月就会被人活活算计死的，自己的一亩三分地铁定是保不住了，而且怕是会被算计的骨头都不会剩下。——其实现在在我们老家，一个人哪有一亩三分地呀，都不到三分了，但这是题外话，就不多说了。</p>
+<p>仔细想想呢，前面说的“<em>只有城市才能养活我</em> ”其实并不准确，准确的说法应该是：<strong>我被套牢在了城市里面。</strong> 先是因为我能做颗螺丝钉，所以我在城市能够养活自己。慢慢地，因为城市只要我做颗螺丝钉，久而久之，我其他的技能都被城市净化了，除了螺丝钉我什么也做不了了，离开了城市，我就不能够养活自己。我就这样被固定在了城市里，再也离不开了。</p>
+<p>这样被拴的城市里面的人，还不止我这种情况。在一个城市买了房的人，八成这辈子都被这座城市套牢了；而那些买了房道并且还有二三十年货款的呢，不但城市固定了，基本上连换工作也是不大可能的了。就是说，这种情况下的人，连螺丝钉这种通用件的通用性和更换性都已经没有了。他们更像一颗颗被混凝土包裹在高楼大厦里面的螺丝钉，直到天荒地老，直到海枯石烂，都休想挪动分毫。</p>
+<h1 id="三"><a href="#三" class="headerlink" title="三"></a>三</h1><p>得承认，上面在段写的太绝对，太悲观了。虽然有一定的道理，但是生活其实没那么糟，现实也没那么残酷。</p>
+<p>换个角度想想，刚才的那个螺丝钉的比喻还是有其他地方可以用上的。比如说：<strong>找工作，是进大企业好，还是小企业好</strong>。</p>
+<p>进个大企业，效益就用不着你操心，效益差的企业肯定能做大么_——这里暂且不考虑大企业衰败的情况_ 。大企业还有其他好处，比如大企业正规，会签订正规合同，正规地买五险一金，工作更有保障。另外，大企业更专业，它的专业体现为分工明确。在大企业上班，一般情况你只用负责其中的一个环节，企业所有流程中很小的一个环节，其余的都不用操心，自有他人处理。而这，不是跟我们上面一段所说的螺丝钉一样一样的么！螺丝钉当久了，就只能做螺丝钉了，也就当不了扳手，成不了锤子了。</p>
+<p>在小单位上班呢，往往是一个人负责一堆事情，从一开始你就需要培养多方面的能力，处理各种不同的业务。长久下来你不大会变成一颗螺丝钉，更可能会成为一把瑞士军刀。但整个历程可能会艰辛的多，通常来说小单位待遇也会低的多。但阅历会丰富的多，见识的增长也会大的多。</p>
+<p>一个可能会让你多赚钱，另一个可能会让你更值钱，但也不一定。这样一想，“找工作，是进大企业好，还是小企业好”其实并没有什么确定的答案，不过是个萝卜白菜的问题。</p>
+<p>而且老话说的好：<strong>师傅领进门，修行在个人</strong>。有在大企业赚不着钱的人，也有在小单位学了一身本事然后自己出去赚了大钱的人。大企业和小企业，不过是不同平台，只能提供一个可能性，到底要如何发展，会如何发展，还是在于自己。</p>
+<p>在大单位工作，切记一定不能被它把你其他技能都给净化没了，除了做螺丝钉心里记得惦记点儿别的什么，套用古人的话就是：<strong>生于忧患，死于安乐。</strong> 在小企业呢，多看多学多总结，尽快把自己打造的足够强悍，尽快让自己足够值钱，然后一切都会水到渠成，该来的必然到来。</p>
+<p>一路想一路写，写的有点儿凌乱，大家见谅。权当抛砖引玉了。</p>
+<p>各位，晚安！</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+  <img id="wechat_subscriber_qcode" src="/images/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" alt="无华0871 wechat" style="width: 200px; max-width: 100%;"/>
+  <div>感谢阅读！欢迎扫码订阅我的公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="无华0871 微信支付"/>
+        <p>微信</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="无华0871 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>无华0871</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://wuhua0871.com/2017/06/10/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AA%E8%83%BD%E5%81%9A%E4%B8%AA%E5%9F%8E%E9%87%8C%E4%BA%BA/" title="为什么我只能做个城里人">http:&#x2F;&#x2F;wuhua0871.com&#x2F;2017&#x2F;06&#x2F;10&#x2F;%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AA%E8%83%BD%E5%81%9A%E4%B8%AA%E5%9F%8E%E9%87%8C%E4%BA%BA&#x2F;</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;&#x2F;i&gt;BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/07/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8%E6%98%93%E7%BB%8F/" rel="next" title="人人都能用易经">
+                <i class="fa fa-chevron-left"></i> 人人都能用易经
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/12/%E8%BF%88%E5%87%BA%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%8C%E4%B8%80%E5%88%87%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E9%9A%BE/" rel="prev" title="迈出第一步，一切没有那么难">
+                迈出第一步，一切没有那么难 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="无华0871"/>
+            
+              <p class="site-author-name" itemprop="name">无华0871</p>
+              <p class="site-description motion-element" itemprop="description">工程师|作死小能手|书虫|电影迷|跑者</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank">&lt;img src&#x3D;&quot;&#x2F;images&#x2F;cc-by-nc-sa.svg&quot; alt&#x3D;&quot;Creative Commons&quot;&#x2F;&gt;</a>
+             </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80"><span class="nav-number">1.</span> <span class="nav-text">一</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C"><span class="nav-number">2.</span> <span class="nav-text">二</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89"><span class="nav-number">3.</span> <span class="nav-text">三</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2026</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">无华0871</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'iI8y8a1tY6hQP32j3uM1pDmL-gzGzoHsz',
+    appKey: 'jWWnu8k2gPEerdONej1Acada',
+    placeholder: '来呀，随便说两句！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+</body>
+</html>

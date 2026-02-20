@@ -1,23 +1,1109 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
-{% block title %}{{ page.title }} | {{ title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
 
-{% block content %}
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.0.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="我相信，用微信的各位，对微信红包都不会感到陌生啊？今天，我们就来聊一聊关于微信红包那点儿事儿：什么才是发红包和抢红包的正确姿势！ 红包，作为我们古老文化传统的一部分，任凭时光流逝，毅然坚挺地流传到了今天。而微信，作为我们这个时代的旗手，则把发红包和抢红包这个事情，发展到了极致。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="聊聊微信红包那点儿事儿">
+<meta property="og:url" content="http://wuhua0871.com/2017/06/13/%E8%81%8A%E8%81%8A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E9%82%A3%E7%82%B9%E5%84%BF%E4%BA%8B%E5%84%BF/index.html">
+<meta property="og:site_name" content="Wuhua0871&#39;s Webland">
+<meta property="og:description" content="我相信，用微信的各位，对微信红包都不会感到陌生啊？今天，我们就来聊一聊关于微信红包那点儿事儿：什么才是发红包和抢红包的正确姿势！ 红包，作为我们古老文化传统的一部分，任凭时光流逝，毅然坚挺地流传到了今天。而微信，作为我们这个时代的旗手，则把发红包和抢红包这个事情，发展到了极致。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-4c8b9e848910e785.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-00199badb5f8b557.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-3a58749463998ee4.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-c68f1ee07feef4cc.jpg">
+<meta property="article:published_time" content="2017-06-13T11:40:00.000Z">
+<meta property="article:modified_time" content="2020-11-21T12:36:10.098Z">
+<meta property="article:author" content="无华0871">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5010584-4c8b9e848910e785.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="http://wuhua0871.com/2017/06/13/聊聊微信红包那点儿事儿/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>聊聊微信红包那点儿事儿 | Wuhua0871's Webland</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wuhua0871's Webland</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">无华的网络空间</p>
+      
+    
+    
   </div>
 
-{% endblock %}
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;0&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;9&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;28&lt;&#x2F;span&gt;</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wuhua0871.com/2017/06/13/%E8%81%8A%E8%81%8A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E9%82%A3%E7%82%B9%E5%84%BF%E4%BA%8B%E5%84%BF/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无华0871"/>
+      <meta itemprop="description" content="工程师|作死小能手|书虫|电影迷|跑者"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wuhua0871's Webland"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">聊聊微信红包那点儿事儿
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-13 19:40:00" itemprop="dateCreated datePublished" datetime="2017-06-13T19:40:00+08:00">2017-06-13</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-11-21 20:36:10" itemprop="dateModified" datetime="2020-11-21T20:36:10+08:00">2020-11-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/06/13/%E8%81%8A%E8%81%8A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E9%82%A3%E7%82%B9%E5%84%BF%E4%BA%8B%E5%84%BF/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/06/13/%E8%81%8A%E8%81%8A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E9%82%A3%E7%82%B9%E5%84%BF%E4%BA%8B%E5%84%BF/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/5010584-4c8b9e848910e785.jpg" alt="红包"></h2><p>我相信，用微信的各位，对微信红包都不会感到陌生啊？今天，我们就来聊一聊关于微信红包那点儿事儿：<strong>什么才是发红包和抢红包的正确姿势！</strong></p>
+<p>红包，作为我们古老文化传统的一部分，任凭时光流逝，毅然坚挺地流传到了今天。而微信，作为我们这个时代的旗手，则把发红包和抢红包这个事情，发展到了极致。</p>
+<span id="more"></span>
+<p>我觉得红包的相关的所有问题，概括点儿说＂得体＂二字足矣。</p>
+<p>下面我再把自己的意见展开说一下。</p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/5010584-00199badb5f8b557.jpg" alt="送红包"></h2><p><strong>1，得体意味着收发有时。</strong> 比如，别人讨论问题的时候不宜收，冷场没话题的时候可以发；太早太晚了不宜发，午休时段不宜发，空闲时段随便发(下午六点到九点之间？) ；工作时段不宜发，上班前下班后一小段时间可以发，等等。</p>
+<p><strong>2，得体意味着该收时候收，该抢时候抢，该发时候发。</strong> 关于这一点，歌里面唱的好呀：该出手时就出手哇，风风火火闯九州哇！啥意思呢？就是说不该出手的时候，千万得忍住了，该出手的时候呢，也千万别客气。</p>
+<p>比如我的原则就是，没有参与的话题不抢；发给指定人，指定条件的，看清楚了再抢；抢错了马上退回并致歉；抢过几次之后，一定要发出来，至少也得发一个。道理特别简单：来而不往非礼也。</p>
+<p>记住了，＂<em>光抢不发</em>＂和＂<em>平时不冒泡抢红包时候比谁都快</em>＂这两种情况都是要<strong>坚决杜绝</strong>的。相信我，这样的人，不管去到哪个群体，都不会受人待见的。</p>
+<p><strong>红包要能收能发，收发自如。</strong> 做到这两点，小伙伴们才能一起愉快地玩耍。</p>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/5010584-3a58749463998ee4.jpg" alt="送红包"></h2><p><strong>3，得体，就意味着不得让他人和自己难堪，不能扫了大家的兴。</strong></p>
+<p>比如说，别人发红包你没抢着，就叫着嚷着让别人再发一个，就很不得体。又比如，抢的少了，或者觉得人家红包发少了，就阴阳怪气地说些个无聊话，不管是发自内心的，还是想抖个机灵，也都是很不得体的。再比如，打肿脸充胖子，有事没事使劲发，而且尽可能往大里发，这样的行为我认为同样是很不得体的。因为你这样做不但给大家造成很大压力，而且万一给自己造成的财务上面的负担，也同样是很不好的。何苦为难自己呢？！</p>
+<p><em>【重要备注：最后这个例子完全不适用于群主和各位豪。敬爱的群主和各位豪大大们，请你们无情地用红包来狠狠砸我吧！直到天荒地老，直到海枯石烂，直到天无棱，地无角，天地合，愿你们的红包雨不曾有过片刻停歇……  】</em></p>
+<p>4，抢红包发红包的时候，我们一定要有清醒的认识，大家在一个群里面，为了同样的目标，相互学习，相互讨教，相互帮助，大家都是相互平等的。可能有的人暂时厉害一点，有经验一点，能够为其他人提供的帮助多一点，但这些都不会改变人与人之间的平等性。发红包是自发的，自愿的，发的多发的少也应该量力而为。<strong>红包这事儿没有谁亏欠谁，也没有谁辜负了谁。抢到了就当是白得的，但要想着适时发出去。没抢到也没有必要懊恼，你要坚信，红包总会有下一波的。</strong></p>
+<p>这里澄清一下啊，我并没有要你整天啥事儿不干，就盯着群里抢红包的意思啊，只是想表达：<strong>红包这种事，平常心就好了</strong>。工作生活才是第一位的。抢红包，娱乐罢了。因为娱乐的小事而耽误了工作和生活这样的大事，那可要不得。</p>
+<p>有的人，抢的少了或者没抢到，便出言不逊，大放厥词，更有甚者呼天抢地，满地打滚，口吐白沫，那就更加使不得了。这样做，一来寒了发红包的人的心，二来使你往昔辛苦经营的个使人形象毁于一旦－－如果之前有的话，完全是得不偿失呀。我怕你冷静下来之后，后悔都来不及呀！而且我相信，在你闹过之后，但凡有点儿眼力劲儿的小伙伴，也都会对你退避三舍了吧。</p>
+<h2 id="-3"><a href="#-3" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/5010584-c68f1ee07feef4cc.jpg" alt="一堆红包"></h2><p><strong>6，坚决抵制一切以抢红包的名义开展各种网络聚众赌博的行为！</strong></p>
+<p><strong>5，红包是什么？红包其实就是个润滑剂，红包就是调节气氛，调动情绪，弥合嫌隙，化解尴尬之万灵神药。</strong></p>
+<p>是药三分毒，就算是神药也不例外。如何用好红包这个工具，来达到与人愉快地交往的目的，还是看个人修养，觉悟和品性的。俗话说，酒品鉴人品，我看红包亦然。不要小看了抢红包这个小动作，它可以把一个人的人品，修养完整地反映出来。</p>
+<p>另外，收发红包这些小原则，不单单只在收发红包时适用，在群里面发消息聊天，平时做人做事时也同样适用。</p>
+<p>千言万语汇成一句话：小红包，大名堂，收发需谨慎哪！</p>
+<p>以上个人拙见，愿能博君一笑。如有不妥，请不吝指正。</p>
+<p>谢谢！</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+  <img id="wechat_subscriber_qcode" src="/images/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" alt="无华0871 wechat" style="width: 200px; max-width: 100%;"/>
+  <div>感谢阅读！欢迎扫码订阅我的公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="无华0871 微信支付"/>
+        <p>微信</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="无华0871 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>无华0871</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://wuhua0871.com/2017/06/13/%E8%81%8A%E8%81%8A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E9%82%A3%E7%82%B9%E5%84%BF%E4%BA%8B%E5%84%BF/" title="聊聊微信红包那点儿事儿">http:&#x2F;&#x2F;wuhua0871.com&#x2F;2017&#x2F;06&#x2F;13&#x2F;%E8%81%8A%E8%81%8A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E9%82%A3%E7%82%B9%E5%84%BF%E4%BA%8B%E5%84%BF&#x2F;</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;&#x2F;i&gt;BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/12/%E8%BF%88%E5%87%BA%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%8C%E4%B8%80%E5%88%87%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E9%9A%BE/" rel="next" title="迈出第一步，一切没有那么难">
+                <i class="fa fa-chevron-left"></i> 迈出第一步，一切没有那么难
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/15/%E8%87%B4%E6%9C%AA%E6%9D%A5%E7%9A%84%E8%87%AA%E5%B7%B1/" rel="prev" title="致22天后的自己">
+                致22天后的自己 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="无华0871"/>
+            
+              <p class="site-author-name" itemprop="name">无华0871</p>
+              <p class="site-description motion-element" itemprop="description">工程师|作死小能手|书虫|电影迷|跑者</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank">&lt;img src&#x3D;&quot;&#x2F;images&#x2F;cc-by-nc-sa.svg&quot; alt&#x3D;&quot;Creative Commons&quot;&#x2F;&gt;</a>
+             </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-1"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-2"><span class="nav-number">3.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-3"><span class="nav-number">4.</span> <span class="nav-text"></span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2026</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">无华0871</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'iI8y8a1tY6hQP32j3uM1pDmL-gzGzoHsz',
+    appKey: 'jWWnu8k2gPEerdONej1Acada',
+    placeholder: '来呀，随便说两句！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+</body>
+</html>

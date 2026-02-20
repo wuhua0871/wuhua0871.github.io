@@ -1,23 +1,1198 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
-{% block title %}{{ page.title }} | {{ title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
 
-{% block content %}
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.0.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="想不想拥有自己的个人网站你想拥有一个只属于你自己的网站么？ 不想？ 是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？ 那么，现在我现在告诉你，有这样一个机会：只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站，你来不来呢？ 如果我再告诉你：如果一切顺利的话，整个过程只需花费五分钟，你来不来呢？  好吧，如果你还在继续往下看，那我想你八成是动心">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从零打造免费个人网站：一，初识HEXO">
+<meta property="og:url" content="http://wuhua0871.com/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/index.html">
+<meta property="og:site_name" content="Wuhua0871&#39;s Webland">
+<meta property="og:description" content="想不想拥有自己的个人网站你想拥有一个只属于你自己的网站么？ 不想？ 是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？ 那么，现在我现在告诉你，有这样一个机会：只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站，你来不来呢？ 如果我再告诉你：如果一切顺利的话，整个过程只需花费五分钟，你来不来呢？  好吧，如果你还在继续往下看，那我想你八成是动心">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-911ccf00be76165c.jpg">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-a1bbdf4fcc325a5c.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-426d3f16923b6e89.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-3858241cefa31e7d.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-6a31185849e8d10b.PNG">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5010584-a281e63bd6dd784b.png">
+<meta property="article:published_time" content="2018-04-22T13:56:00.000Z">
+<meta property="article:modified_time" content="2020-11-21T12:35:30.261Z">
+<meta property="article:author" content="无华0871">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/5010584-911ccf00be76165c.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="http://wuhua0871.com/2018/04/22/从零打造免费个人网站：一，初识HEXO/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>从零打造免费个人网站：一，初识HEXO | Wuhua0871's Webland</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wuhua0871's Webland</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">无华的网络空间</p>
+      
+    
+    
   </div>
 
-{% endblock %}
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;0&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;9&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;28&lt;&#x2F;span&gt;</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wuhua0871.com/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无华0871"/>
+      <meta itemprop="description" content="工程师|作死小能手|书虫|电影迷|跑者"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wuhua0871's Webland"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">从零打造免费个人网站：一，初识HEXO
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-22 21:56:00" itemprop="dateCreated datePublished" datetime="2018-04-22T21:56:00+08:00">2018-04-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-11-21 20:35:30" itemprop="dateModified" datetime="2020-11-21T20:35:30+08:00">2020-11-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://upload-images.jianshu.io/upload_images/5010584-911ccf00be76165c.jpg"></p>
+<h1 id="想不想拥有自己的个人网站"><a href="#想不想拥有自己的个人网站" class="headerlink" title="想不想拥有自己的个人网站"></a>想不想拥有自己的个人网站</h1><p>你想拥有一个只属于你自己的网站么？</p>
+<p>不想？</p>
+<p>是因为怕要花钱，又要学习很多建站的知识，而且管理起来很麻烦么？</p>
+<p>那么，现在我现在告诉你，有这样一个机会：<strong>只要学习几个简单的命令，点几下鼠标敲几下键盘，就可以免费建立并管理一个完全属于你自己的网站</strong>，你来不来呢？</p>
+<p>如果我再告诉你：<strong>如果一切顺利的话，整个过程只需花费五分钟</strong>，你来不来呢？</p>
+<!---more--->
+<p>好吧，如果你还在继续往下看，那我想你八成是动心了。那我们就废话不多说，马上行动起来吧。</p>
+<p>我们的整体思路是这样的：<strong>利用HEXO这个工具，在github这个网站上，搭建我们自己的个人网站。</strong></p>
+<p>注意刚才这句话里，我们一共提到两个东西：<strong>HEXO</strong>和<strong>github</strong>。在进行下一步操作之前，我觉得最好先详细介绍一下它们俩，毕竟它们是我们接下来所有操作的主角。</p>
+<p>它们一个是工具，一个是网站，这点刚才已经说过了。但它们具体是怎么的工具，怎样的网站呢？别着急，我马上为你一一道来。</p>
+<h1 id="HEXO和github"><a href="#HEXO和github" class="headerlink" title="HEXO和github"></a>HEXO和github</h1><h2 id="1-什么是HEXO？"><a href="#1-什么是HEXO？" class="headerlink" title="1.什么是HEXO？"></a>1.什么是HEXO？</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-安装HEXO"><a href="#2-安装HEXO" class="headerlink" title="2.安装HEXO"></a>2.安装HEXO</h2><p>安装Hexo只需几分钟时间，相当简单。但有个安装前提，在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
+<ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用<code>npm</code>即可完成Hexo的安装。具体的安装过程及必备程序的安装，我们稍后会详细介绍，暂且按下不表。</p>
+<h2 id="3-什么是github"><a href="#3-什么是github" class="headerlink" title="3.什么是github"></a>3.什么是github</h2><p>github到底是一个怎样的网站呢？让我们直接引用来自维基百科的解释：</p>
+<blockquote>
+<p><strong>GitHub</strong> 是通过<strong>Git</strong>进行版本控制的软件源代码托管服务，由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。</p>
+<p><strong>GitHub</strong> 同时提供付费账户和免费账户。这两种账户都可以创建公开的代码仓库，但是付费账户还可以创建私有的代码仓库。根据在2009年的Git用户调查，GitHub是最流行的Git访问站点。除了允许个人和组织创建和访问保管中的代码以外，它也提供了一些方便社会化共同软件开发的功能，即一般人口中的社区功能，包括允许用户追踪其他用户、组织、软件库的动态，对软件代码的改动和bug提出评论等。GitHub也提供了图表功能，用于概观显示开发者们怎样在代码库上工作以及软件的开发活跃程度。</p>
+<p>截止到2015年，GitHub已经有超过两千八百万注册用户和7900万代码库。事实上已经成为了世界上最大的代码存放网站和开源社区。</p>
+</blockquote>
+<p>说了这么多，我们需要知道的无非以下两点：</p>
+<ol>
+<li>github是程序员们用来储存代码的，它通过git进行版本控制；</li>
+<li>免费用户也可以在github上建立代码仓库。</li>
+</ol>
+<p>看吧，可以免费建立代码仓库——<em>对于我们来说是储存网站文件</em>，还可以进行版本控制——<em>对于我们来说是网站的更新</em>，我们需要的功能是不是都有了呢。</p>
+<h2 id="4-软件安装"><a href="#4-软件安装" class="headerlink" title="4.软件安装"></a>4.软件安装</h2><p>通过前面的介绍，背景知识就介绍的差不多了。我们这就进入下一步准备工作：<strong>软件安装。</strong></p>
+<p>由于我自己用的电脑是windows系统，而且读者中大部分人用的也是windows系统，故以下操作就以windows系统为例，其他操作系统的，请自己灵活处理了。</p>
+<p>我们需要安装哪些软件，它们各有什么作用，我用下面的表格作个说明：</p>
+<table>
+<thead>
+<tr>
+<th>软件</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Node.js</td>
+<td>HEXO运行必备</td>
+</tr>
+<tr>
+<td>git</td>
+<td>HEXO必备，上传网页到github，版本控制（当然了，对于我们来说是网站的更新）</td>
+</tr>
+<tr>
+<td>HEXO</td>
+<td>网页文件的生成</td>
+</tr>
+<tr>
+<td>atom</td>
+<td>文件编辑器，markdown写作利器</td>
+</tr>
+</tbody></table>
+<p>除了HEXO，另外三个软件我们直接下载安装包安装就行了。虽然这里面包含了无奈与妥协，但是这个我们就不说了。为了方便大家，我在这里也贴出我分享的百度网盘下载地址：<a href="https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A%E3%80%82">https://pan.baidu.com/s/1TrQDVBCT-Iij7-6UBrf01A。</a></p>
+<p>相信我人品的，不怕死的，就把地址复制到浏览器里下载吧。不想在这里下载的朋友，下载地址大家自己搜索下吧，尽量用谷歌搜索，尽量选择官方下载。</p>
+<p>注意，我这里分享的软件只适用于64位windows系统。还在用32位系统的各位，你们可能只能靠自己了，祝好运！</p>
+<p>至于HEXO，等后面直接用命令安装就好了，现在还不到时候。安装好了这两个软件，就让我们进入下一步吧。</p>
+<p>#我的网站我来了！</p>
+<h2 id="1-创建代码仓库"><a href="#1-创建代码仓库" class="headerlink" title="1.创建代码仓库"></a>1.创建代码仓库</h2><p>在github创建代码库之前，我们首先要先登录账号。如果你还没有github账号，打开github.com，注册一个就好了，没什么好说的，记住用户名不要包含中文，取个由英文字母和数字组成的就行。</p>
+<p>我们直接跳到下一步，如何创建代码仓库。</p>
+<p>也许到这里，有的朋友会心生疑问：</p>
+<blockquote>
+<p>喂，老兄！你是不是搞错了？我们是要储存网页，又不上传代码，怎么是建立什么代码仓库呢？</p>
+</blockquote>
+<p>这个问题我觉得提得非常好。我现在马上解答：</p>
+<ol>
+<li>没有搞错。</li>
+<li>是的，我们是要储存网页。</li>
+</ol>
+<p>我们就是要建立一个代码仓库，来储存我们上传的网页。需要特别注意的是，我们要建立一个特殊的代码仓库，它必须以你自己的用户名加一个固定后缀，公式是：yourname+.github.io。以我自己为例，我在github的用户名是：wuhua0871，所以我需要创建的代码仓库名字就是：wuhua0871.github.io。<br><img src="https://upload-images.jianshu.io/upload_images/5010584-a1bbdf4fcc325a5c.png"><br><img src="https://upload-images.jianshu.io/upload_images/5010584-426d3f16923b6e89.png"></p>
+<p>一定要记住，这里能够变动的，只有用户名，其他一个字母都不能变。</p>
+<h2 id="2-安装HEXO，建站"><a href="#2-安装HEXO，建站" class="headerlink" title="2.安装HEXO，建站"></a>2.安装HEXO，建站</h2><p>如果你完成了上一步，那现在我们就万事具备，只欠东风了。</p>
+<p>现在，选择一个文件夹，用来储存你网站的本地文件。比如我选择的是E:\HEXO，那么我就需要在E:\HEXO这个文件夹上点击右键，选择Git Bash Here，然后会弹出如图所示窗口。<br><img src="https://upload-images.jianshu.io/upload_images/5010584-3858241cefa31e7d.png"><br><img src="https://upload-images.jianshu.io/upload_images/5010584-6a31185849e8d10b.PNG"></p>
+<p>在刚才弹出的窗口输入下列命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init yourname.github.io</span><br><span class="line">cd yourname.github.io</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo generate</span><br><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
+<p>两点说明：</p>
+<ol>
+<li>命令要一条一条输入和执行，一条完了再输另外一条</li>
+<li>注意把其中的yourname换成你在github的用户名。</li>
+</ol>
+<p>直到出在下面信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>这时你可以在浏览器里面敲入上面的地址<a href="http://localhost:4000/%EF%BC%8C%E9%A2%84%E8%A7%88%E4%B8%80%E4%B8%8B%E7%BD%91%E7%AB%99%E7%9A%84%E6%A0%B7%E5%AD%90%E3%80%82">http://localhost:4000/，预览一下网站的样子。</a></p>
+<p>到现在为止，我们离成功建立自己的网站就只差临门一脚了。切换回git bash窗口，先按下组合键Ctrl+C，然后在命令框中输入下列命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">atom .</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/5010584-a281e63bd6dd784b.png"></p>
+<p>在弹出的atom右侧，选择_config.yml文件，把图片位置修改如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>同样的，记得替换yourname为你的用户名。完了按组合键Ctrl+S保存修改，然后回到git bash，键入下面命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>在弹出的窗口中，输入你的github账号和密码，回车。</p>
+<p>如果一切正常，窗口在跳过一连串代码后，会出现下面的信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Everything up-to-date</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
+<p>这就意味着一切正常，你的网站已经部署成功了，网址就是你的代码仓库名字：<a href="https://yourname.github.io/">https://yourname.github.io</a> 。</p>
+<p>你现在可以在浏览器里面查看了。</p>
+<p>开心了吧？还不赶紧把你的网址发给小伙伴们装个逼！</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>现在，我们的网站已经建立起来了。</p>
+<p>你会发现，这只是一个HEXO用来示范的模板，就是我们刚才本地预览的那个死样子，几乎没什么内容，而且样式也千篇一律，丑到了极点。你心里可能会有千万神痹呼啸而过：<strong>尼玛，这货跟我想要的网站之间，差了至少有无数个<a href="wuhua0871.com" title="wuhua0871.com">wuhua0871.com</a>的距离吧</strong>！</p>
+<p>但这不是重点。</p>
+<p>重点是：<strong>我们现在是拥有自己网站的人了，对不对！</strong></p>
+<p>王家卫的电影《东邪西毒》里面，张国荣不是就有这么句台词么：</p>
+<blockquote>
+<p>穿鞋的和不穿鞋的刀客，价钱是相差很远的。</p>
+</blockquote>
+<p>是的，我们现在算是穿鞋的刀客了——虽然穿的鞋并不怎么样。有和没有，差距就是这么大，你不觉得么！</p>
+<p>好了，我们的教程到这时就结束了。至于说怎样个性化我们的网站，怎么更新我们网站的内容，这又是另外的问题了，我们后会有期。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+  <img id="wechat_subscriber_qcode" src="/images/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" alt="无华0871 wechat" style="width: 200px; max-width: 100%;"/>
+  <div>感谢阅读！欢迎扫码订阅我的公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="无华0871 微信支付"/>
+        <p>微信</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="无华0871 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>无华0871</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://wuhua0871.com/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/" title="从零打造免费个人网站：一，初识HEXO">http:&#x2F;&#x2F;wuhua0871.com&#x2F;2018&#x2F;04&#x2F;22&#x2F;%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO&#x2F;</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;&#x2F;i&gt;BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/28/%E4%BD%A0%E8%BF%98%E5%9C%A8%E6%AF%8F%E5%A4%A9%E4%B9%B0%E5%BD%A9%E7%A5%A8%E5%90%97%EF%BC%9F/" rel="next" title="你还在每天买彩票吗？">
+                <i class="fa fa-chevron-left"></i> 你还在每天买彩票吗？
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/28/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%BA%8C%EF%BC%8C%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3HEXO/" rel="prev" title="从零打造免费个人网站：二，深入了解HEXO">
+                从零打造免费个人网站：二，深入了解HEXO <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="无华0871"/>
+            
+              <p class="site-author-name" itemprop="name">无华0871</p>
+              <p class="site-description motion-element" itemprop="description">工程师|作死小能手|书虫|电影迷|跑者</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank">&lt;img src&#x3D;&quot;&#x2F;images&#x2F;cc-by-nc-sa.svg&quot; alt&#x3D;&quot;Creative Commons&quot;&#x2F;&gt;</a>
+             </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%83%B3%E4%B8%8D%E6%83%B3%E6%8B%A5%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99"><span class="nav-number">1.</span> <span class="nav-text">想不想拥有自己的个人网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO%E5%92%8Cgithub"><span class="nav-number">2.</span> <span class="nav-text">HEXO和github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFHEXO%EF%BC%9F"><span class="nav-number">2.1.</span> <span class="nav-text">1.什么是HEXO？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%89%E8%A3%85HEXO"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装HEXO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%BB%80%E4%B9%88%E6%98%AFgithub"><span class="nav-number">2.3.</span> <span class="nav-text">3.什么是github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">2.4.</span> <span class="nav-text">4.软件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93"><span class="nav-number">2.5.</span> <span class="nav-text">1.创建代码仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%89%E8%A3%85HEXO%EF%BC%8C%E5%BB%BA%E7%AB%99"><span class="nav-number">2.6.</span> <span class="nav-text">2.安装HEXO，建站</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E5%B0%BE"><span class="nav-number">3.</span> <span class="nav-text">结尾</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2026</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">无华0871</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'iI8y8a1tY6hQP32j3uM1pDmL-gzGzoHsz',
+    appKey: 'jWWnu8k2gPEerdONej1Acada',
+    placeholder: '来呀，随便说两句！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+</body>
+</html>

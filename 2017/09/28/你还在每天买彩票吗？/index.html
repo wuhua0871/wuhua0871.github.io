@@ -1,23 +1,1141 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
-{% block title %}{{ page.title }} | {{ title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
 
-{% block content %}
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.0.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="引子不管天阴下雨，不管工作是还是工作日，那小店生意都很不错。 店主从来不会被那个问题困扰：生意不好怎么办？ 在他看来，生意无非两种情况：今天生意好，和今天生意特别好。看着人们出出进进，他愈发坚定了这个看法。 人们急匆匆地来，慢悠悠地走。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="你还在每天买彩票吗？">
+<meta property="og:url" content="http://wuhua0871.com/2017/09/28/%E4%BD%A0%E8%BF%98%E5%9C%A8%E6%AF%8F%E5%A4%A9%E4%B9%B0%E5%BD%A9%E7%A5%A8%E5%90%97%EF%BC%9F/index.html">
+<meta property="og:site_name" content="Wuhua0871&#39;s Webland">
+<meta property="og:description" content="引子不管天阴下雨，不管工作是还是工作日，那小店生意都很不错。 店主从来不会被那个问题困扰：生意不好怎么办？ 在他看来，生意无非两种情况：今天生意好，和今天生意特别好。看着人们出出进进，他愈发坚定了这个看法。 人们急匆匆地来，慢悠悠地走。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5010584-83e5f897103242b6.jpg">
+<meta property="article:published_time" content="2017-09-28T10:09:00.000Z">
+<meta property="article:modified_time" content="2020-11-21T12:35:41.675Z">
+<meta property="article:author" content="无华0871">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5010584-83e5f897103242b6.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="http://wuhua0871.com/2017/09/28/你还在每天买彩票吗？/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>你还在每天买彩票吗？ | Wuhua0871's Webland</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wuhua0871's Webland</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">无华的网络空间</p>
+      
+    
+    
   </div>
 
-{% endblock %}
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;0&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;9&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;28&lt;&#x2F;span&gt;</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wuhua0871.com/2017/09/28/%E4%BD%A0%E8%BF%98%E5%9C%A8%E6%AF%8F%E5%A4%A9%E4%B9%B0%E5%BD%A9%E7%A5%A8%E5%90%97%EF%BC%9F/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无华0871"/>
+      <meta itemprop="description" content="工程师|作死小能手|书虫|电影迷|跑者"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wuhua0871's Webland"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">你还在每天买彩票吗？
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-09-28 18:09:00" itemprop="dateCreated datePublished" datetime="2017-09-28T18:09:00+08:00">2017-09-28</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-11-21 20:35:41" itemprop="dateModified" datetime="2020-11-21T20:35:41+08:00">2020-11-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/09/28/%E4%BD%A0%E8%BF%98%E5%9C%A8%E6%AF%8F%E5%A4%A9%E4%B9%B0%E5%BD%A9%E7%A5%A8%E5%90%97%EF%BC%9F/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/28/%E4%BD%A0%E8%BF%98%E5%9C%A8%E6%AF%8F%E5%A4%A9%E4%B9%B0%E5%BD%A9%E7%A5%A8%E5%90%97%EF%BC%9F/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/5010584-83e5f897103242b6.jpg" alt="彩票"></p>
+<h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>不管天阴下雨，不管工作是还是工作日，那小店生意都很不错。</p>
+<p>店主从来不会被那个问题困扰：<strong>生意不好怎么办？</strong></p>
+<p>在他看来，生意无非两种情况：<strong>今天生意好，和今天生意特别好</strong>。看着人们出出进进，他愈发坚定了这个看法。</p>
+<p>人们急匆匆地来，慢悠悠地走。</p>
+<span id="more"></span>
+<p>进了店，先气定神闲地观察墙上的数据表和走势图，然后眉头微蹙思考那些下次将被抽中的数字，中间伴随着若干次数的点头或者摇头，直到狠狠地连续点头，这个阶段才算是完成了；接下来，就是郑重其事地写下那神圣的数字；等写完了，郑重地把写好的纸和钱一直交给出票员；小心翼翼地接过还热乎的彩票，检查一遍数字和开奖时间，满意地点点头，嘴角无意中泛起一丝笑意；把票折好，放进裤袋深处，再用手往里塞两下，掏出手，心满意足地走出门去；一边走，手有意无意地拍拍刚才装进了彩票的裤袋，甚或再次伸进裤袋，摸到刚刚放进去的彩票，用力握一下，心里更踏实了，仿佛手里握住的，不是一张不知中奖与否的彩票，而是一张通往更美好未来的入场券。</p>
+<h1 id="买彩票让我们更快乐？"><a href="#买彩票让我们更快乐？" class="headerlink" title="买彩票让我们更快乐？"></a>买彩票让我们更快乐？</h1><p>买完彩票出来，感觉整个世界都比刚才好了，你看，连那天上的乌云都变可爱了不少！</p>
+<p>买彩票会让我们生活得更快乐了，这是事实。虽然开奖的时候多少会有些失落，但是其余时间里，我们确实比平时更快乐了，原因很简单：<strong>彩票使我们心存希望</strong>。</p>
+<p><strong>希望是个好东西。</strong> 我都懒得举例子来说明，因为心存希望，人们创造了多少奇迹，成就了多少伟业了，反正你懂的。</p>
+<p>但有一点不好：<strong>好的东西都具有稀缺性</strong>。稀缺倒不是说希望有多贵，为了得到它需要付出多大的代价。只是说现实生活往往很残忍，很吝啬，很少有地方能够轻松愉快地满足我们对希望的需求。而买彩票，算是在这个残忍的世界上，一个方便快捷地获得希望的方式了，而且老少皆宜，门槛极低，两块钱即可轻松参与。</p>
+<p>所以，</p>
+<ul>
+<li>当你运气不好，坏事连连，觉得人生没有希望的时候应该怎么办？大声：<strong>买彩票！</strong></li>
+<li>当现实生活让你开始怀疑人生，甚至感觉生无可恋的时候应该怎么办？大声：<strong>买彩票！</strong></li>
+</ul>
+<p><strong>对于任何能够满足人们需求且代价低廉的事物，我们都应该心存敬意，彩票正是这样。</strong> 所以，我一直觉得彩票是一种了不起的发明，其伟大程度甚至不亚于任何一种宗教的诞生。</p>
+<h1 id="买彩票的得与失"><a href="#买彩票的得与失" class="headerlink" title="买彩票的得与失"></a>买彩票的得与失</h1><p>当然，<strong>心存敬意和用实际行动参与没有必然联系。</strong> 虽然我认为发明彩票很伟大，彩票对人们很有用，但是我个人是反对经常买彩票的。</p>
+<p>问两个很简单的问题：</p>
+<blockquote>
+<p>大家买彩票的动机和目的是什么？<br>大家能够通过买彩票获得希望的原因是什么？</p>
+</blockquote>
+<p>我的答案很直接，也很简单：<strong>钱，大笔的；一夜暴富；幻想中的美好生活</strong>。</p>
+<p>每次跟人说起彩票，我都会以开玩笑的口吻说道：“<strong>我从来不买彩票，因为一买就中，没意思！</strong>”</p>
+<p>我这话虽然是玩笑话，但也是经得起现实考验的。现在，我来给你举个例子说明一下，为什么我没有说谎。</p>
+<p>我们以规则的 <strong>福彩3D单</strong> 选投注为例，<strong>怎么保证每买必中呢？很简单，把000~999全部买下即可</strong>。</p>
+<p>接下来，我们算个账。</p>
+<p><strong>要购买000~999全部的号码，一共一千注，共需投注金额两千元，中奖金额为一千元。很容易计算出，中奖后我们依然净亏损一千元，即投注金额的50%。</strong></p>
+<p>而这已经是最好的情况了！</p>
+<p>要知道，为了方便，我都没有算上开出对子和豹子的情况。另外，还有这样一个冰冷的事实：<strong>几乎所有的彩票，返奖率都在50%左右</strong>。再加上运气，销售网点单一等因素，<strong>购买任何品种的彩票，净亏损必将超过50%</strong>。</p>
+<p>你知道这意味着什么？这意味着，<strong>长期购买彩票，相当于心甘情愿地主动把自己的钱往别人口袋里面塞。</strong> 总体上看，<strong>买彩票不但不会增加你的财富值，反而会让你的财富缩水，而且是投入越多，缩水越快。</strong></p>
+<p>所以呀，如果你真想赚钱，本着少输当作赢的原则，<strong>不买彩票才真的是在为发家致富做贡献呢</strong>。</p>
+<h1 id="美梦的破灭"><a href="#美梦的破灭" class="headerlink" title="美梦的破灭"></a>美梦的破灭</h1><p>假如你去问一个忠实彩民：“<strong>是什么原因让您持之以恒地购买彩票的呢？</strong>”得到的答案很可能五花八门，甚至不乏 <strong>“支持国家的福利事业”</strong> 这种高度政治正确的回答，但是他心里想的更可能是：<strong>这不是还没中大奖呢么！</strong>。</p>
+<p>不想成为将军的士兵不是好士兵，不想中大奖的彩民也不是合格的彩民！想中大奖的想法是无可厚非的。谁又从没幻想过，自己明天就中个大奖，最好是十几亿那种，然后从此过上衣食无忧的富足日子呢？</p>
+<p>还是那句话：理想很丰满——<em>如果幻想也算的话</em>，现实很骨感。</p>
+<p>问个小问题：每天准点按时购买彩票，夜夜做着发财梦，口口声声要通过购买彩票实现财务自由的你，是否去了解过，<strong>那些因为彩票而一夜暴富的人们，现在的生活怎样呢？</strong></p>
+<p>作为一个严谨的人，作为一个曾经立志要通过购买彩票发家致富，走向人生巅峰的有志青年，我了解过。</p>
+<p>统计表明，那些通过购买彩票中大奖而一夜暴富，实现了财务自由的人，几乎无一例外地在五年之内败光了所有家产，过着朝不保夕的日子，其中的大部分还有巨额负债。</p>
+<p>古今中外，概莫能外。真是</p>
+<blockquote>
+<p>眼看他起高楼，<br>眼看他宴宾客，<br>眼看他楼塌了。</p>
+</blockquote>
+<p>看到这个事实，你是否又在感慨世事无常了呢？没必要。它无非是在用冰冷的现实告诉我们这样一个道理：<strong>不是每个人都有驾驭巨额财富的能力</strong>。</p>
+<p>说迷信点这叫命。不是每个人都有命过上好日子。命不好的人，不管给他多少机会，给他多好的条件，结果都一样的烂。说实在一点，是 财富背后的智慧比财富本身更重要。没有相应的智慧，纵使给他万贯家财，也终会千金散尽。</p>
+<p>明白了这个道理，我开始这样看待买彩票的问题：<strong>怀揣个发财梦是没有问题的。重要的是，在努力发财的同时，更要积累驾驭财富的智慧。在拥有它之前，先成为那个配得上它的人。</strong></p>
+<h1 id="成也概率，败也概率"><a href="#成也概率，败也概率" class="headerlink" title="成也概率，败也概率"></a>成也概率，败也概率</h1><p>说到买彩票，就不得不提到统计学与概率论。但是我并不想在文章里面添加一堆的数据和表格，来向你说明买彩票是个多么坑爹的事情——<em>虽然它确实坑爹</em>。我想通过下面这样一个视角来说明，概率是怎样影响我们的生活的。</p>
+<p>老规矩，我们还是从一个问题开始：<strong>你觉得一个人什么时候更可能去购买彩票呢？</strong></p>
+<p>“想发财的时候”肯定是个不会错的答案，但是我还想要得细致一点。</p>
+<p>如果你记性不错的话，你应该还记得我在前文说过，当我们生活不顺的时候，穷困潦倒的时候，万念俱灰的时候，我们更可能会去购买彩票。</p>
+<p>而且人在遭遇不顺的时候，智商往往是不在线的。彩票用廉价的方式给予我们希望，让我们相信，不管生活如何糟糕，我们都有可能通过购买彩票实现弯道超车，将人生转败为胜。这时，彩票貌似就成了这些人唯一能够抓住的救命稻草。</p>
+<p>这种时候，谁还顾得上什么中奖概率啊！别说百万分之一了，百亿分之一才好呢，因为那意味着更多的大奖奖金啊。所以，他们不但会去买彩票，更可能会不顾一切地去买，甚至为此孤注一掷也押上所有。如果明天新闻报道说，一个贫病交加的人砸锅卖铁买彩票，最后因为没钱治病而身亡，我一点儿都不会感觉奇怪。</p>
+<p>但是廉价得来的希望终究廉价，虚妄的幻想终归虚妄。等待他们的只有更加悲惨的现实。</p>
+<p>为了一丝成功的可能性押上所有，甚至搭上身家性命，这是失败者的做法，也是所谓的穷人思维。</p>
+<p>与之相对的富人思维是这样考虑问题的：谁都不可能对没有发生的事情有百分之一百的把握，但是他们会通过自己的努力让成功的概率大一点，再大一点。而且，他们只做成功概率超过50%的事情，绝不会在成功概率极低的事情上浪费自己富贵的时间和精力，比如买彩票。</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>这世界就是这样，同样的知识，在不同的人眼里却有着完全不一样的理解和感受，从而采取不一样的行动，最终过上完全不同的人生。</p>
+<p>当然了，如果你是一个忠实彩民，我根本不可能通过一篇四不像的文章，就让你从此金盆洗手，不再购买彩票。况且我本来也就没有此意。</p>
+<p>俗话说“小赌怡情，大赌乱性”。买彩票这种事情，一不伤天害理，二不违法乱纪，三还可以带给自己希望和快乐，还门槛极低。你要是愿意买就买呗，只要不过火就好。</p>
+<p>只是希望你在看完此文之后，明白这样一个事实：<strong>买彩票的钱，从离开你的手一刻起，有一半就基本永远不再属于你了。千金散尽还复来只是个美好的愿望罢了，万不可当真。</strong></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+  <img id="wechat_subscriber_qcode" src="/images/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" alt="无华0871 wechat" style="width: 200px; max-width: 100%;"/>
+  <div>感谢阅读！欢迎扫码订阅我的公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="无华0871 微信支付"/>
+        <p>微信</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="无华0871 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>无华0871</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://wuhua0871.com/2017/09/28/%E4%BD%A0%E8%BF%98%E5%9C%A8%E6%AF%8F%E5%A4%A9%E4%B9%B0%E5%BD%A9%E7%A5%A8%E5%90%97%EF%BC%9F/" title="你还在每天买彩票吗？">http:&#x2F;&#x2F;wuhua0871.com&#x2F;2017&#x2F;09&#x2F;28&#x2F;%E4%BD%A0%E8%BF%98%E5%9C%A8%E6%AF%8F%E5%A4%A9%E4%B9%B0%E5%BD%A9%E7%A5%A8%E5%90%97%EF%BC%9F&#x2F;</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;&#x2F;i&gt;BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/14/%E4%BD%A0%E6%83%B3%E8%A6%81%E7%9A%84%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/" rel="next" title="你想要的到底是什么">
+                <i class="fa fa-chevron-left"></i> 你想要的到底是什么
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/22/%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%9A%E4%B8%80%EF%BC%8C%E5%88%9D%E8%AF%86HEXO/" rel="prev" title="从零打造免费个人网站：一，初识HEXO">
+                从零打造免费个人网站：一，初识HEXO <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="无华0871"/>
+            
+              <p class="site-author-name" itemprop="name">无华0871</p>
+              <p class="site-description motion-element" itemprop="description">工程师|作死小能手|书虫|电影迷|跑者</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank">&lt;img src&#x3D;&quot;&#x2F;images&#x2F;cc-by-nc-sa.svg&quot; alt&#x3D;&quot;Creative Commons&quot;&#x2F;&gt;</a>
+             </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%95%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B9%B0%E5%BD%A9%E7%A5%A8%E8%AE%A9%E6%88%91%E4%BB%AC%E6%9B%B4%E5%BF%AB%E4%B9%90%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">买彩票让我们更快乐？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B9%B0%E5%BD%A9%E7%A5%A8%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1"><span class="nav-number">3.</span> <span class="nav-text">买彩票的得与失</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BE%8E%E6%A2%A6%E7%9A%84%E7%A0%B4%E7%81%AD"><span class="nav-number">4.</span> <span class="nav-text">美梦的破灭</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%90%E4%B9%9F%E6%A6%82%E7%8E%87%EF%BC%8C%E8%B4%A5%E4%B9%9F%E6%A6%82%E7%8E%87"><span class="nav-number">5.</span> <span class="nav-text">成也概率，败也概率</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0"><span class="nav-number">6.</span> <span class="nav-text">后记</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2026</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">无华0871</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'iI8y8a1tY6hQP32j3uM1pDmL-gzGzoHsz',
+    appKey: 'jWWnu8k2gPEerdONej1Acada',
+    placeholder: '来呀，随便说两句！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+</body>
+</html>
